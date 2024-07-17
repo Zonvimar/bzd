@@ -2,6 +2,7 @@ import React, {Suspense} from 'react'
 import {Button, Image} from "@nextui-org/react";
 import PackingOfSafetyBags from "@/components/widgets/PackingOfSafetyBags";
 import CooperationOptions from "@/components/widgets/CooperationOptions";
+import Equipment from "@/components/widgets/Equipment";
 
 const Page = async() => {
 
@@ -83,9 +84,7 @@ const Page = async() => {
                     {/*////*/}
                     <PackingOfSafetyBags/>
                     <CooperationOptions/>
-                    <div className={'h-96'}>
-
-                    </div>
+                    <Equipment/>
                 </div>
             </div>
         </Suspense>

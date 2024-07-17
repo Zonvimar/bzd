@@ -1,5 +1,6 @@
 import AppNavbar from '@/components/widgets/AppNavbar'
 import React, {Suspense} from 'react'
+import Footer from "@/components/widgets/Footer";
 
 const AppLayout = async({children}: { children: React.ReactNode }) => {
 
@@ -11,6 +12,9 @@ const AppLayout = async({children}: { children: React.ReactNode }) => {
             <div className={`overflow-y-hidden bg-content1`}>
                 <main className={'bg-content3 overflow-auto flex-1 flex flex-col gap-2'}>
                     {children}
+                    <Suspense>
+                        <Footer/>
+                    </Suspense>
                 </main>
             </div>
         </div>
