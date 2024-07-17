@@ -87,7 +87,6 @@ const PackingOfSafetyBags = () => {
                                    removeWrapper
                             >
                                 <TableHeader>
-                                    >
                                     <TableColumn>Состав</TableColumn>
                                     <TableColumn>Количество(шт)</TableColumn>
                                     <TableColumn>Вес(кг)</TableColumn>
