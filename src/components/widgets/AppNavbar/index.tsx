@@ -49,7 +49,7 @@ const AppNavbar = () => {
             <NavbarContent className="sm:hidden" justify="start">
                 <NavbarMenuToggle className={'p-3'} aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
             </NavbarContent>
-            <NavbarBrand justify="center" className={'sm:block flex items-center justify-center'}>
+            <NavbarBrand className={'sm:block flex items-center justify-center'}>
                 <Link href={'/'}>
                     <Image
                         width={80}
