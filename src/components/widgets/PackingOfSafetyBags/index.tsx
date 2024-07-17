@@ -14,61 +14,8 @@ import {
     Tabs
 } from "@nextui-org/react";
 import {Card, CardBody, CardHeader} from "@nextui-org/card";
-import {Chip} from "@nextui-org/chip";
-import {black} from "next/dist/lib/picocolors";
-
-const packColumns: TableColumn[] = [
-    {
-        key: 'name',
-        label: 'Состав',
-    },
-    {
-        key: 'count',
-        label: 'Количество(шт)',
-    },
-    {
-        key: 'weight',
-        label: 'Вес(кг)',
-    },
-    {
-        key: 'weightPerItem',
-        label: 'Вес за штуку(кг)',
-    },
-];
-
-const packTabs = [
-    {
-        label: 'Рельс Р50',
-        key: 'p50',
-    },
-    {
-        label: 'Полушпала',
-        key: 'polushpala',
-    },
-    {
-        label: 'Хомут',
-        key: 'homut',
-    },
-    {
-        label: 'Болт клеммный в сборе М22×75',
-        key: 'М22×75',
-    },
-    {
-        label: 'Болт М24×160',
-        key: 'М24×160',
-    },
-    {
-        label: 'Отбойник',
-        key: 'bumpStop',
-    },
-]
-
-const pack1Data = [
-
-]
 
 const PackingOfSafetyBags = () => {
-
 
     const classNames = React.useMemo(
         () => ({
