@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Page = async({searchParams}) => {
+const Page = async() => {
 
     return (
         <div>

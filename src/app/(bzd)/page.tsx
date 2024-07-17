@@ -3,7 +3,7 @@ import {Button, Image} from "@nextui-org/react";
 import PackingOfSafetyBags from "@/components/widgets/PackingOfSafetyBags";
 import CooperationOptions from "@/components/widgets/CooperationOptions";
 
-const Page = async({searchParams}) => {
+const Page = async() => {
 
     return (
         <div className={'flex flex-col gap-6'}>
