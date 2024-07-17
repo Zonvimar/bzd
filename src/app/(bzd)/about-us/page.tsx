@@ -1,11 +1,11 @@
-import React from 'react'
+import React, {Suspense} from 'react'
 
 const Page = async() => {
 
     return (
-        <div>
+        <Suspense>
             About us PAGE
-        </div>
+        </Suspense>
     )
 }
 
