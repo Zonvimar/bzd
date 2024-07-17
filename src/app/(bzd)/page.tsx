@@ -38,7 +38,6 @@ const Page = async() => {
                             height={'70%'}
                             alt="NextUI hero Image"
                             src="/o-nas.jpg"
-                            objectFit={'cover'}
                         />
                     {/*</div>*/}
 
