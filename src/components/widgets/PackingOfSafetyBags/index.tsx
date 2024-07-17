@@ -327,7 +327,6 @@ const PackingOfSafetyBags = () => {
                                    selectionMode="single"
                                    removeWrapper
                                    color={'primary'}
-                                   lined
                             >
                                 <TableHeader className={'bg-primary'}>
                                     <TableColumn className={'w-fit'}>Состав</TableColumn>
