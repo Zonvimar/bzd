@@ -87,10 +87,10 @@ const PackingOfSafetyBags = () => {
                                    removeWrapper
                             >
                                 <TableHeader>
-                                    <TableColumn>Состав</TableColumn>
-                                    <TableColumn>Количество(шт)</TableColumn>
-                                    <TableColumn>Вес(кг)</TableColumn>
-                                    <TableColumn>Вес за штуку(кг)</TableColumn>
+                                    <TableColumn className={'w-fit'}>Состав</TableColumn>
+                                    <TableColumn className={'w-fit'}>Количество,шт</TableColumn>
+                                    <TableColumn className={'w-fit'}>Вес,кг</TableColumn>
+                                    <TableColumn className={'w-fit'}>Вес за шт,кг</TableColumn>
                                 </TableHeader>
                                 <TableBody>
                                     <TableRow key="1">
@@ -112,10 +112,10 @@ const PackingOfSafetyBags = () => {
 
                             >
                                 <TableHeader className={'bg-primary'}>
-                                    <TableColumn>Состав</TableColumn>
-                                    <TableColumn>Количество(шт)</TableColumn>
-                                    <TableColumn>Вес(кг)</TableColumn>
-                                    <TableColumn>Вес за штуку(кг)</TableColumn>
+                                    <TableColumn className={'w-fit'}>Состав</TableColumn>
+                                    <TableColumn className={'w-fit'}>Количество,шт</TableColumn>
+                                    <TableColumn className={'w-fit'}>Вес,кг</TableColumn>
+                                    <TableColumn className={'w-fit'}>Вес за шт,кг</TableColumn>
                                 </TableHeader>
                                 <TableBody>
                                     <TableRow key="1">
@@ -160,10 +160,10 @@ const PackingOfSafetyBags = () => {
                                    removeWrapper
                             >
                                 <TableHeader className={'bg-primary'}>
-                                    <TableColumn>Состав</TableColumn>
-                                    <TableColumn>Количество(шт)</TableColumn>
-                                    <TableColumn>Вес(кг)</TableColumn>
-                                    <TableColumn>Вес за штуку(кг)</TableColumn>
+                                    <TableColumn className={'w-fit'}>Состав</TableColumn>
+                                    <TableColumn className={'w-fit'}>Количество,шт</TableColumn>
+                                    <TableColumn className={'w-fit'}>Вес,кг</TableColumn>
+                                    <TableColumn className={'w-fit'}>Вес за шт,кг</TableColumn>
                                 </TableHeader>
                                 <TableBody>
                                     <TableRow key="1">
@@ -184,10 +184,10 @@ const PackingOfSafetyBags = () => {
                                    removeWrapper
                             >
                                 <TableHeader className={'bg-primary'}>
-                                    <TableColumn>Состав</TableColumn>
-                                    <TableColumn>Количество(шт)</TableColumn>
-                                    <TableColumn>Вес(кг)</TableColumn>
-                                    <TableColumn>Вес за штуку(кг)</TableColumn>
+                                    <TableColumn className={'w-fit'}>Состав</TableColumn>
+                                    <TableColumn className={'w-fit'}>Количество,шт</TableColumn>
+                                    <TableColumn className={'w-fit'}>Вес,кг</TableColumn>
+                                    <TableColumn className={'w-fit'}>Вес за шт,кг</TableColumn>
                                 </TableHeader>
                                 <TableBody>
                                     <TableRow key="1">
@@ -226,10 +226,10 @@ const PackingOfSafetyBags = () => {
                                    removeWrapper
                             >
                                 <TableHeader className={'bg-primary'}>
-                                    <TableColumn>Состав</TableColumn>
-                                    <TableColumn>Количество(шт)</TableColumn>
-                                    <TableColumn>Вес(кг)</TableColumn>
-                                    <TableColumn>Вес за штуку(кг)</TableColumn>
+                                    <TableColumn className={'w-fit'}>Состав</TableColumn>
+                                    <TableColumn className={'w-fit'}>Количество,шт</TableColumn>
+                                    <TableColumn className={'w-fit'}>Вес,кг</TableColumn>
+                                    <TableColumn className={'w-fit'}>Вес за шт,кг</TableColumn>
                                 </TableHeader>
                                 <TableBody>
                                     <TableRow key="1">
@@ -268,10 +268,10 @@ const PackingOfSafetyBags = () => {
                                    removeWrapper
                             >
                                 <TableHeader className={'bg-primary'}>
-                                    <TableColumn>Состав</TableColumn>
-                                    <TableColumn>Количество(шт)</TableColumn>
-                                    <TableColumn>Вес(кг)</TableColumn>
-                                    <TableColumn>Вес за штуку(кг)</TableColumn>
+                                    <TableColumn className={'w-fit'}>Состав</TableColumn>
+                                    <TableColumn className={'w-fit'}>Количество,шт</TableColumn>
+                                    <TableColumn className={'w-fit'}>Вес,кг</TableColumn>
+                                    <TableColumn className={'w-fit'}>Вес за шт,кг</TableColumn>
                                 </TableHeader>
                                 <TableBody>
                                     <TableRow key="1">
