@@ -10,13 +10,14 @@ import {
     NavbarMenu,
     NavbarMenuItem,
     NavbarMenuToggle,
-    Image,
+    Image, Dropdown, DropdownTrigger, Button, DropdownMenu, DropdownItem, AccordionItem, Accordion,
     // Link
 } from "@nextui-org/react";
 import Link from "next/link";
 import ThemeSwitcher from "@/components/widgets/ThemeSwitcher";
 import CallButton from "@/components/widgets/CallButton";
 import OrderCallButton from "@/components/widgets/OrderCall";
+import {icons} from "lucide-react";
 
 const AppNavbar = () => {
     const pathname = usePathname()
@@ -24,10 +25,21 @@ const AppNavbar = () => {
     const params = searchParamsToUrlQuery(searchParams)
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
+    const accordionClasses = {
+        base: "px-0 w-fit",
+        title: "font-normal text-xl px-0",
+        titleWrapper: "px-0",
+        subtitle: "px-0",
+        heading: "px-0",
+        startContent: "px-0",
+        trigger: "px-0 py-0 data-[hover=true]:bg-default-100 rounded-lg h-fit flex items-center",
+        indicator: "text-medium px-0",
+        content: "text-small pl-4 flex flex-col gap-2 text-md",
+    };
 
     return (
         <Navbar isMenuOpen={isMenuOpen}
-                isBlurred={false}
+                isBlurred={true}
                 onMenuOpenChange={setIsMenuOpen} maxWidth={'xl'} isBordered
                 classNames={{
                     item: [
@@ -49,127 +61,119 @@ const AppNavbar = () => {
             <NavbarContent className="sm:hidden" justify="start">
                 <NavbarMenuToggle className={'p-3'} aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
             </NavbarContent>
-            <NavbarBrand className={'sm:block flex items-center justify-center'}>
+            <NavbarBrand className={'lg:justify-start items-center w-fit flex justify-center'}>
                 <Link href={'/'}>
                     <Image
                         width={80}
                         alt="NextUI hero Image"
-                        src="/img.png"
+                        src="/img-rm-bg.png"
                     />
                     {/*<p className="font-bold text-inherit hidden lg:flex md:flex">Безопасные железные дороги</p>*/}
                     {/*<p className="font-bold text-inherit sm:hidden ">Безопасные железные дороги</p>*/}
                 </Link>
             </NavbarBrand>
-            {/*<NavbarMenu className={'flex flex-col min-h-dvh pt-16 justify-between w-full overflow-y-auto'}>*/}
-            {/*    <div className={'flex flex-col gap-2'}>*/}
-            {/*        <p className={'text-lg'}>Заявки</p>*/}
-            {/*        <Divider/>*/}
-            {/*        <div className={'flex flex-col gap-1 pl-2'}>*/}
-            {/*            <NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)}*/}
-            {/*                            isActive={!params.status && pathname === '/'}>*/}
-            {/*                <Link href={'/'}*/}
-            {/*                      className={`p-2 transition-background items-center ${!params.status && pathname === '/' && 'bg-content2'} flex rounded-md justify-between hover:bg-content2`}>*/}
-            {/*                    <p>Все заявки</p>*/}
-            {/*                </Link>*/}
-            {/*            </NavbarMenuItem>*/}
-            {/*            <NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)} isActive={params.status === 'true'}>*/}
-            {/*                <Link href={'?status=ACTIVE'}*/}
-            {/*                      className={`p-2 transition-background items-center ${params.status === 'true' && 'bg-content2'} flex rounded-md justify-between hover:bg-content2`}>*/}
-            {/*                    Активные заявки*/}
-            {/*                    <div className={`w-3 h-3 aspect-square bg-green-500 rounded-full`}/>*/}
-            {/*                </Link>*/}
-            {/*            </NavbarMenuItem>*/}
-            {/*            <NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)} isActive={params.status === 'false'}>*/}
-            {/*                <Link href={'?status=FINISHED'}*/}
-            {/*                      className={`p-2 transition-background items-center flex ${params.status === 'false' && 'bg-content2'} rounded-md justify-between hover:bg-content2`}>*/}
-            {/*                    Завершенные заявки*/}
-            {/*                    <div className={`w-3 h-3 aspect-square bg-gray-500 rounded-full`}/>*/}
-            {/*                </Link>*/}
-            {/*            </NavbarMenuItem>*/}
-            {/*        </div>*/}
-            {/*        {user.role === 'ADMIN' &&*/}
-            {/*            <>*/}
-            {/*                <p className={'text-lg'}>Администрирование</p>*/}
-            {/*                <Divider/>*/}
-            {/*                <div className={'flex flex-col gap-1 pl-2'}>*/}
-            {/*                    <NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)}>*/}
-            {/*                        <Link href={'/administration/users'}*/}
-            {/*                              className={`p-2 transition-background items-center ${pathname.includes('/users') && 'bg-content3'} flex rounded-md justify-between hover:bg-content2`}>*/}
-            {/*                            <p>Пользователи</p>*/}
-            {/*                            <UsersRound/>*/}
-            {/*                        </Link>*/}
-            {/*                    </NavbarMenuItem>*/}
-            {/*                    <NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)}>*/}
-            {/*                        <Link href={'/administration/companies'}*/}
-            {/*                              className={`p-2 transition-background items-center ${pathname.includes('/companies') && 'bg-content3'} flex rounded-md justify-between hover:bg-content2`}>*/}
-            {/*                            <p>Компании</p>*/}
-            {/*                            <Building2/>*/}
-            {/*                        </Link>*/}
-            {/*                    </NavbarMenuItem>*/}
-            {/*                    <NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)}>*/}
-            {/*                        <Link href={'/administration/projects'}*/}
-            {/*                              className={`p-2 transition-background items-center ${pathname.includes('/projects') && 'bg-content3'} flex rounded-md justify-between hover:bg-content2`}>*/}
-            {/*                            <p>Проекты</p>*/}
-            {/*                            <FolderKanban/>*/}
-            {/*                        </Link>*/}
-            {/*                    </NavbarMenuItem>*/}
-            {/*                    <NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)}>*/}
-            {/*                        <Link href={'/administration/statuses'}*/}
-            {/*                              className={`p-2 transition-background items-center ${pathname.includes('/statuses') && 'bg-content3'} flex rounded-md justify-between hover:bg-content2`}>*/}
-            {/*                            <p>Статусы</p>*/}
-            {/*                            <BarChartHorizontal/>*/}
-            {/*                        </Link>*/}
-            {/*                    </NavbarMenuItem>*/}
-            {/*                </div>*/}
-            {/*            </>*/}
-            {/*        }*/}
-            {/*        {user.role === 'MANAGER' &&*/}
-            {/*            <>*/}
-            {/*                <p className={'text-lg'}>Администрирование</p>*/}
-            {/*                <Divider/>*/}
-            {/*                <div className={'flex flex-col gap-1 pl-2'}>*/}
-            {/*                    <NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)}>*/}
-            {/*                        <Link href={'/administration/users'}*/}
-            {/*                              className={`p-2 transition-background items-center ${pathname.includes('/users') && 'bg-content3'} flex rounded-md justify-between hover:bg-content2`}>*/}
-            {/*                            <p>Сотрудники</p>*/}
-            {/*                            <UsersRound/>*/}
-            {/*                        </Link>*/}
-            {/*                    </NavbarMenuItem>*/}
-            {/*                </div>*/}
-            {/*            </>*/}
-            {/*        }*/}
-            {/*    </div>*/}
-            {/*    <div className={'flex flex-col gap-2 pb-2'}>*/}
-            {/*        <NavbarMenuItem>*/}
-            {/*            {!user.is_email_verified ?*/}
-            {/*                <div className={'flex justify-between mr-2'}>*/}
-            {/*                    <VerifyEmailWidget user={user}/>*/}
-            {/*                    <ThemeSwitcher/>*/}
-            {/*                    /!*<NotificationWidget oldNotifications={notifications}/>*!/*/}
-            {/*                </div>*/}
-            {/*                :*/}
-            {/*                <div className={'flex justify-end mr-2'}>*/}
-            {/*                    <ThemeSwitcher/>*/}
-            {/*                    /!*<NotificationWidget oldNotifications={notifications}/>*!/*/}
-            {/*                </div>*/}
-            {/*            }*/}
-            {/*        </NavbarMenuItem>*/}
-            {/*        <NavbarMenuItem>*/}
-            {/*            <UserMenu user={user}/>*/}
-            {/*        </NavbarMenuItem>*/}
-            {/*    </div>*/}
-            {/*</NavbarMenu>*/}
-            {/*<NavbarContent justify="end" className={'sm:hidden flex py-2'}>*/}
-            {/*    <NavbarItem>*/}
-            {/*    </NavbarItem>*/}
-            {/*</NavbarContent>*/}
-            <NavbarContent justify="center" className={'hidden sm:flex'}>
-                <NavbarItem isActive={pathname.includes('/services')}>
-                    <Link href={'/services/turnkey/'}
-                          className={`transition-background items-center flex rounded-md justify-between`}>
-                        Услуги
+            <NavbarMenu>
+                <Accordion variant="light" fullWidth={false} isCompact itemClasses={accordionClasses}
+                           defaultExpandedKeys={pathname.includes('/services') ? ['1'] : []}>
+                    <AccordionItem title={'Услуги'} key={'1'} hideIndicator isCompact>
+                        <NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)}
+                                        isActive={pathname.includes('/services/turnkey')}>
+                            <Link href={'/services/turnkey'}
+                                  className={`transition-background items-center flex rounded-md justify-between `}>
+                                Под ключ
+                            </Link>
+                        </NavbarMenuItem>
+                        <NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)}
+                                        isActive={pathname.includes('/services/rent')}>
+                            <Link href={'/services/rent'}
+                                  className={`transition-background items-center flex rounded-md justify-between `}>
+                                Аренда
+                            </Link>
+                        </NavbarMenuItem>
+                        <NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)}
+                                        isActive={pathname.includes('/services/buy')}>
+                            <Link href={'/services/buy'}
+                                  className={`transition-background items-center flex rounded-md justify-between `}>
+                                Покупка
+                            </Link>
+                        </NavbarMenuItem>
+                        <NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)}
+                                        isActive={pathname.includes('/services/installation')}>
+                            <Link href={'/services/installation'}
+                                  className={`transition-background items-center flex rounded-md justify-between `}>
+                                Установка
+                            </Link>
+                        </NavbarMenuItem>
+                    </AccordionItem>
+                </Accordion>
+                <NavbarMenuItem className={'px-2'} onClick={() => setIsMenuOpen(!isMenuOpen)} isActive={pathname.includes('/projects')}>
+                    <Link href={'/projects'}
+                          className={`transition-background items-center flex rounded-md justify-between `}>
+                        Проекты
                     </Link>
-                </NavbarItem>
+                </NavbarMenuItem>
+                <NavbarMenuItem className={'px-2'}  onClick={() => setIsMenuOpen(!isMenuOpen)} isActive={pathname.includes('/about-us')}>
+                    <Link href={'/about-us'}
+                          className={`transition-background items-center flex rounded-md justify-between `}>
+                        О нас
+                    </Link>
+                </NavbarMenuItem>
+                <NavbarMenuItem className={'px-2'} onClick={() => setIsMenuOpen(!isMenuOpen)} isActive={pathname.includes('/contacts')}>
+                    <Link href={'/contacts'}
+                          className={`transition-background items-center flex rounded-md justify-between`}>
+                        Контакты
+                    </Link>
+                </NavbarMenuItem>
+            </NavbarMenu>
+            <NavbarContent justify="center" className={'hidden sm:flex'}>
+                <Dropdown
+                    placement="bottom-start"
+                >
+                    <NavbarItem isActive={pathname.includes('/services')}>
+                        <DropdownTrigger>
+                            <p className={`hover:cursor-pointer transition-background items-center flex rounded-md justify-between`}
+                            >
+                                Услуги
+                            </p>
+                        </DropdownTrigger>
+                    </NavbarItem>
+                    <DropdownMenu
+                        aria-label="Услуги"
+                        className="px-0"
+                        itemClasses={{
+                            base: "gap-4",
+                        }}
+                    >
+                        <DropdownItem
+                            href={'/services/turnkey/'}
+                            key="turnkey"
+                            className={`${pathname.includes('/services/turnkey') ? 'bg-primary text-white' : ''}`}
+                        >
+                            Под ключ
+                        </DropdownItem>
+                        <DropdownItem
+                            key="rent"
+                            href={'/services/rent/'}
+                            className={`${pathname.includes('/services/rent') ? 'bg-primary text-white' : ''}`}
+                        >
+                            Аренда
+                        </DropdownItem>
+                        <DropdownItem
+                            key="buy"
+                            href={'/services/buy/'}
+                            className={`${pathname.includes('/services/buy') ? 'bg-primary text-white' : ''}`}
+                        >
+                            Покупка
+                        </DropdownItem>
+                        <DropdownItem
+                            key="installation"
+                            href={'/services/installation/'}
+                            className={`${pathname.includes('/services/installation') ? 'bg-primary text-white' : ''}`}
+                        >
+                            Установка
+                        </DropdownItem>
+                    </DropdownMenu>
+                </Dropdown>
                 <NavbarItem isActive={pathname.includes('/projects')}>
                     <Link href={'/projects'}
                           className={`transition-background items-center flex rounded-md justify-between `}>
