@@ -19,7 +19,7 @@ const Page = async() => {
                             <hr className={'w-8 h-0.5 bg-primary rounded border-0'}/>
                         </h1>
                         <p className={'text-white text-xl font-light'}>
-                            Сотрудничаем с ОАО «РЖД» с 2017 года.
+                            Сотрудничаем с ОАО «РЖД» с 2019 года.
                         </p>
                     </div>
                     {/*</div>*/}
