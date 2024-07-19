@@ -10,7 +10,7 @@ const AppLayout = async({children}: { children: React.ReactNode }) => {
                 <AppNavbar/>
             </Suspense>
             <div className={`overflow-y-hidden bg-content1`}>
-                <main className={'bg-content3 overflow-auto flex-1 flex flex-col gap-2'}>
+                <main className={'bg-content2 overflow-auto flex-1 flex flex-col gap-2'}>
                     {children}
                     <Suspense>
                         <Footer/>
