@@ -16,7 +16,7 @@ import {
 import Link from "next/link";
 import ThemeSwitcher from "@/components/widgets/ThemeSwitcher";
 import CallButton from "@/components/widgets/CallButton";
-import OrderCallButton from "@/components/widgets/OrderCall";
+import OrderCallButton from "../forms/OrderCall";
 import {icons} from "lucide-react";
 
 const AppNavbar = () => {

@@ -9,10 +9,14 @@ const Page = async() => {
     return (
         <Suspense>
             <div className={'flex flex-col gap-6'}>
-                <ServicesHeader title={'Продажа\n' +
+                <ServicesHeader
+                    title={'Продажа\n' +
                     'страховочных\n' +
-                    'рельсовых пакетов'} description={'Цена покупки от 2 198 920 рублей с НДС.\n' +
-                    'Рельсы приобретаются отдельно.'}/>
+                    'рельсовых пакетов'}
+                    description={'Цена покупки от 2 198 920 рублей с НДС.\n' +
+                    'Рельсы приобретаются отдельно.'}
+                    defaultValue={'buy'}
+                />
                 <div
                     className={'w-full mx-auto flex flex-col items-center justify-center max-w-7xl px-2 lg:px-8 gap-4'}>
                     <PackingOfSafetyBags/>

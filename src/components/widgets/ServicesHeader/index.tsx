@@ -1,8 +1,9 @@
 import {Button} from "@nextui-org/react";
 import React from "react";
+import OrderService from "@/components/widgets/forms/OrderService";
 
 
-const ServicesHeader = ({title, description}: {title: string, description: string}) => {
+const ServicesHeader = ({title, description, defaultValue}: {title: string, description: string, defaultValue: 'turnKey' | 'rent' | 'buy' | 'install'}) => {
 
     return (
         <div className={'flex flex-col gap-6'}>
@@ -15,8 +16,9 @@ const ServicesHeader = ({title, description}: {title: string, description: strin
                         <p className={'text-white text-xl font-light'}>
                             {description}
                         </p>
-                        <Button color={'primary'} variant={'solid'} size={'lg'} className={'px-8 w-auto lg:w-fit'}>Заказать
-                            услугу</Button>
+                        <OrderService defaultValue={defaultValue}/>
+                        {/*<Button color={'primary'} variant={'solid'} size={'lg'} className={'px-8 w-auto lg:w-fit'}>Заказать*/}
+                        {/*    услугу</Button>*/}
                     </div>
                 </div>
             </div>
