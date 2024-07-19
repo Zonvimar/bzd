@@ -3,6 +3,7 @@ import {Button, Image} from "@nextui-org/react";
 import PackingOfSafetyBags from "@/components/widgets/PackingOfSafetyBags";
 import CooperationOptions from "@/components/widgets/CooperationOptions";
 import Equipment from "@/components/widgets/Equipment";
+import Link from "next/link";
 
 const Page = async() => {
 
@@ -75,9 +76,11 @@ const Page = async() => {
                                 проведения работ и местоположения объекта.
                             </p>
                             {/*</div>*/}
-
-                            <Button color={'primary'} variant={'ghost'} size={'lg'} className={'px-8 w-fit'}>Выполненные
-                                работы</Button>
+                            <Link href={'/projects'} className={'text-primary'}>
+                                <Button color={'primary'} variant={'ghost'} size={'lg'} className={'px-8 w-fit'}>
+                                    Выполненные
+                                    работы</Button>
+                            </Link>
                         </div>
                         {/*</div>*/}
                     </div>

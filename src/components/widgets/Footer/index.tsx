@@ -7,15 +7,18 @@ import React from "react";
 const Footer = () => {
 
     return (
-        <div className={'w-full bg-content1 mt-4'}>
+        <div className={'w-full bg-content1 mt-10 pt-4'}>
             <div
                 className={'w-full mx-auto px-8 h-full flex flex-col lg:flex-row justify-between py-1 items-center gap-4 max-w-7xl'}>
-                <Image
-                    width={'150'}
-                    height={'150'}
-                    alt="NextUI hero Image"
-                    src="/img_1.png"
-                />
+                <div>
+                    <Image
+                        width={'150'}
+                        height={'150'}
+                        alt="NextUI hero Image"
+                        src="/img_1.png"
+                    />
+                </div>
+
                 {/*<p>+7 (926) 563-11-07</p>*/}
                 <div className={'flex flex-col gap-1.5 items-start justify-center'}>
                     <p className={'font-bold text-xl w-full text-center'}>Контакты</p>
