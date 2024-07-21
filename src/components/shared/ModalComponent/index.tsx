@@ -89,7 +89,7 @@ const ModalComponent: FC<ModalComponentProps> = ({
                 nonButtonTrigger
                 ?? <Button onClick={() => setOpen(!open)} isIconOnly={isIcon} variant={buttonVariant}
                            color={'primary'}
-                           className={`${buttonVariant === 'link' ? 'pt-0 pb-0 pl-0 py-0 m-0 h-fit w-fit' : 'px-2'}`}>
+                           className={`px-2`}>
                     {
                         isIcon ? (
                             <p>{icon}</p>

@@ -9,7 +9,7 @@ import {Input, Textarea} from "@nextui-org/input";
 
 const OrderService = ({defaultValue}: {defaultValue?: 'turnKey' | 'rent' | 'buy' | 'install'}) => {
     const [open, setOpen] = useState(false)
-    const [service, setService] = useState<string>(defaultValue)
+    const [service, setService] = useState<string | undefined>(defaultValue)
 
     const services = [
         {key: "turnKey", label: "Под ключ"},
