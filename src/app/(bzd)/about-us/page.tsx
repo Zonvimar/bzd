@@ -1,7 +1,8 @@
 import React, {Suspense} from 'react'
-import {Button, Divider} from "@nextui-org/react";
+import {Button, Divider, Image} from "@nextui-org/react";
 import CooperationOptionsVersion2 from "@/components/widgets/CooperationOptionsVersion2";
 import {Check} from "lucide-react";
+import {Card, CardBody} from "@nextui-org/card";
 
 const Page = async() => {
 
@@ -18,8 +19,9 @@ const Page = async() => {
                             ООО "БЖД"
                             <hr className={'w-8 h-0.5 bg-primary rounded border-0'}/>
                         </h1>
-                        <p className={'text-white text-xl font-light'}>
-                            Сотрудничаем с ОАО «РЖД» с 2019 года.
+                        <p className={'text-white text-xl font-light text-center'}>
+                            Цель нашей компании - предложение широкого ассортимента
+                            товаров и услуг<br/> на постоянно высоком качестве обслуживания.
                         </p>
                     </div>
                     {/*</div>*/}
@@ -59,32 +61,96 @@ const Page = async() => {
                             Сертифицированная продукция и высококвалифицированные специалисты, соответствующие стандартам и требованиям.
                         </p>
                     </div>
-                    <div className={'grid grid-cols-1 lg:grid-cols-4 w-full gap-6'}>
+                    <div className={'grid grid-cols-1 lg:grid-cols-2 w-full gap-6'}>
                         <div className={'flex gap-2 items-start w-full'}>
                             <div className={'text-primary w-8'}>
                                 <Check className={'w-8'}/>
                             </div>
-                            <p>Специалисты аттестованы в ОАО “РЖД”.</p>
+                            <p>Техническая база для проведения крупномасштабных проектов.</p>
                         </div>
                         <div className={'flex gap-2 items-start w-full'}>
                             <div className={'text-primary w-8'}>
                                 <Check className={'w-8'}/>
                             </div>
-                            <p>Отработанный механизм по установке и согласованию разрешительной документации.</p>
+                            <p>Штат высококвалифицированных сотрудников.</p>
                         </div>
                         <div className={'flex gap-2 items-start w-full'}>
                             <div className={'text-primary w-8'}>
                                 <Check className={'w-8'}/>
                             </div>
-                            <p>Рельсовый пакет сертифицирован соответствует всем ГОСТам и требованиям ОАО «РЖД».</p>
+                            <p>Все работы выполняются согласно законодательства РФ.</p>
                         </div>
                         <div className={'flex gap-2 items-start w-full'}>
                             <div className={'text-primary w-8'}>
                                 <Check className={'w-8'}/>
                             </div>
-                            <p>Собственное производство страховочных пакетов.</p>
+                            <p> Квалифицированные консультации.</p>
                         </div>
                     </div>
+                </div>
+                <div className={'w-full h-full flex flex-col text-start gap-8'}>
+                    <div className={'flex flex-col gap-2'}>
+                        <h2 className={'text-3xl font-bold'}>Наши заказчики</h2>
+                    </div>
+                    <Card>
+                        <CardBody className={'grid grid-cols-2 lg:grid-cols-6 items-center w-full gap-6'}>
+                            <div className={'flex gap-2 items-center justify-center w-full'}>
+                                <Image
+                                    width={'100%'}
+                                    height={'70%'}
+                                    alt="NextUI hero Image"
+                                    src="/rjd.jpg"
+                                    radius={'none'}
+                                />
+                            </div>
+                            <div className={'flex gap-2 items-center justify-center w-full'}>
+                                <Image
+                                    width={'100%'}
+                                    height={'100%'}
+                                    alt="NextUI hero Image"
+                                    src="/mosinjproject.svg"
+                                    radius={'none'}
+                                />
+                            </div>
+                            <div className={'flex gap-2 items-center justify-center w-full'}>
+                                <Image
+                                    width={'100%'}
+                                    height={'100%'}
+                                    alt="NextUI hero Image"
+                                    src="/mck.jpg"
+                                    radius={'none'}
+                                />
+                            </div>
+                            <div className={'flex gap-2 items-center justify-center w-full'}>
+                                <Image
+                                    width={'80%'}
+                                    height={'100%'}
+                                    alt="NextUI hero Image"
+                                    src="/mip.png"
+                                    radius={'none'}
+                                />
+                            </div>
+                            <div className={'flex gap-2 items-center justify-center w-full'}>
+                                <Image
+                                    width={'100%'}
+                                    height={'100%'}
+                                    alt="NextUI hero Image"
+                                    src="/1520.svg"
+                                    radius={'none'}
+                                />
+                            </div>
+                            <div className={'flex gap-2 items-center justify-center w-full'}>
+                                <Image
+                                    width={'100%'}
+                                    height={'100%'}
+                                    alt="NextUI hero Image"
+                                    src="/mostotrest.svg"
+                                    radius={'none'}
+                                />
+                            </div>
+                        </CardBody>
+                    </Card>
+
                 </div>
             </div>
         </Suspense>

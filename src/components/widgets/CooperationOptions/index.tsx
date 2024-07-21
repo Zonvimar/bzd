@@ -15,7 +15,7 @@ const CooperationOptions = () => {
                 </p>
             </div>
 
-            <div className={'grid grid-cols-1 lg:grid-cols-2 gap-6 px-2'}>
+            <div className={'grid grid-cols-1 lg:grid-cols-2 gap-6'}>
                 <Card className={"w-full hover:shadow-2xl transition-shadow"}>
                     {/*<CardHeader className="pt-4 px-2 flex-col items-start">*/}
                     {/*    /!*<div>*!/*/}
