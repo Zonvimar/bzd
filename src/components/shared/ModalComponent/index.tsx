@@ -104,6 +104,7 @@ const ModalComponent: FC<ModalComponentProps> = ({
                     <Cross1Icon className={`${withoutModalHeader && 'text-white'}`}/>
                 </Button>
             }
+                   placement={'center'}
                    isOpen={open} onOpenChange={setOpen} size={modalSize} className={`${withoutModalHeader && 'p-0 w-fit h-fit'} overflow-hidden max-h-[100dvh]`}>
                 <ModalContent>
                     {(onClose) => (
