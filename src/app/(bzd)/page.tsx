@@ -5,6 +5,7 @@ import CooperationOptions from "@/components/widgets/CooperationOptions";
 import Equipment from "@/components/widgets/Equipment";
 import Link from "next/link";
 import OrderService from "@/components/widgets/forms/OrderService";
+import TestModal from "@/components/shared/TestModal";
 
 const Page = async() => {
 
@@ -28,8 +29,9 @@ const Page = async() => {
                                 <hr className={'w-8 h-[4px] bg-primary rounded border-0'}/>
                                 Работаем по всей России
                                 <hr className={'w-8 h-[4px] lg:hidden bg-primary rounded border-0'}/>
-                            </p>
+                            </p>jj
                             <OrderService/>
+                            <TestModal/>
                         </div>
                         {/*</div>*/}
                     </div>
