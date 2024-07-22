@@ -1,20 +1,22 @@
 'use client'
 import {
-    Button,
-    Checkbox,
+    // Button,
+    // Checkbox,
     Modal,
     ModalBody,
     ModalContent,
     ModalFooter,
-    ModalHeader, Select, SelectItem,
+    ModalHeader,
     useDisclosure
-} from "@nextui-org/react";
+} from "@nextui-org/modal";
+import {Button} from "@nextui-org/button";
 import {Input} from "@nextui-org/input";
 import Link from "next/link";
 import {MailIcon} from "@nextui-org/shared-icons";
 import {LockIcon} from "lucide-react";
 import TextField from "@/components/shared/inputs/TextField";
 import React, {useState} from "react";
+import {Select, SelectItem} from "@nextui-org/react";
 
 
 const TestModal = () => {
