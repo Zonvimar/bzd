@@ -81,8 +81,8 @@ const TestModal = () => {
                                     ))}
                                 </Select>
                                 {/*<TextField label={'Необходимое количество пакетов'} name={'count'} variant={'faded'} required isRequired/>*/}
-                                <Input label={'Необходимое количество пакетов'} name={'count'} variant={'faded'} isRequired/>
-                                {service === 'rent' && <Input label={'Срок аренды'} name={'rent'} variant={'faded'} isRequired/>}
+                                <Input label={'Необходимое количество пакетов'} name={'count'} variant={'bordered'} isRequired/>
+                                {service === 'rent' && <Input label={'Срок аренды'} name={'rent'} variant={'bordered'} isRequired/>}
                                 {service === 'rent' || service === 'buy' &&
                                     <Select
                                         label="Способ получения"
@@ -99,11 +99,11 @@ const TestModal = () => {
                                     </Select>
                                 }
                                 {/*<TextField label={'Место установки'} variant={'faded'} required isRequired/>*/}
-                                <Input label={'Место установки'} variant={'faded'} required isRequired/>
+                                <Input label={'Место установки'} variant={'bordered'} required isRequired/>
                                 {/*<TextField label={'Ваше имя'} variant={'faded'} isRequired required/>*/}
-                                <Input label={'Ваше имя'} variant={'faded'} isRequired required/>
+                                <Input label={'Ваше имя'} variant={'bordered'} isRequired required/>
                                 {/*<TextField label={'Номер телефона'} variant={'faded'} isRequired required/>*/}
-                                <Input label={'Номер телефона'} variant={'faded'} isRequired required/>
+                                <Input label={'Номер телефона'} variant={'bordered'} isRequired required/>
                                 {/*<TextField label={'Электронная почта'} variant={'faded'} isRequired required/>*/}
 
                                 {/*<Input*/}
