@@ -11,6 +11,11 @@ const OrderWithDeliveryModal = ({defaultValue}: {defaultValue?: 'turnKey' | 'ren
     const [open, setOpen] = useState(false)
     const [service, setService] = useState<string | undefined>(defaultValue)
 
+    const handleSubmit = (fd: FormData) => {
+        console.log(JSON.stringify(fd))
+        setOpen(false)
+    }
+
     const services = [
         {key: "turnKey", label: "Под ключ"},
         {key: "rent", label: "Аренда"},
@@ -44,7 +49,7 @@ const OrderWithDeliveryModal = ({defaultValue}: {defaultValue?: 'turnKey' | 'ren
             setOpen={setOpen}
             open={open}
         >
-            <form className={'flex flex-col gap-4'}>
+            <form action={handleSubmit} onClick={(e) => e.stopPropagation()} className={'flex flex-col gap-4'}>
                 <Select
                     label="Услуга"
                     placeholder="Выберите услугу"

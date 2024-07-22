@@ -10,6 +10,11 @@ import {Input, Textarea} from "@nextui-org/input";
 const OrderCallButton = () => {
     const [open, setOpen] = useState(false)
 
+    const handleSubmit = (fd: FormData) => {
+        console.log(JSON.stringify(fd))
+        setOpen(false)
+    }
+
     return (
         <ModalComponent
             // isIcon
@@ -21,7 +26,7 @@ const OrderCallButton = () => {
             setOpen={setOpen}
             open={open}
         >
-            <form className={'flex flex-col gap-4'}>
+            <form action={handleSubmit} onClick={(e) => e.stopPropagation()} className={'flex flex-col gap-4'}>
                 <Input label={'Ваше имя'} variant={'faded'} isRequired/>
                 <Input label={'Номер телефона'} variant={'faded'} isRequired/>
                 {/*<Input label={'Электронная почта'} variant={'faded'} isRequired/>*/}

@@ -4,8 +4,13 @@ import React from "react";
 
 
 const ContactForm = () => {
+
+    const handleSubmit = (fd: FormData) => {
+        console.log(JSON.stringify(fd))
+    }
+
     return (
-        <form className={'flex flex-col gap-4'}>
+        <form action={handleSubmit} onClick={(e) => e.stopPropagation()} className={'flex flex-col gap-4'}>
             <Input label={'Ваше имя'} variant={'faded'} isRequired/>
             <Input label={'Номер телефона'} variant={'faded'} isRequired/>
             <Input label={'Электронная почта'} variant={'faded'} isRequired/>

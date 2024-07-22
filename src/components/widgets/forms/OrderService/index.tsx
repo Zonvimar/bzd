@@ -11,6 +11,11 @@ const OrderService = ({defaultValue}: {defaultValue?: 'turnKey' | 'rent' | 'buy'
     const [open, setOpen] = useState(false)
     const [service, setService] = useState<string | undefined>(defaultValue)
 
+
+    const handleSubmit = (fd: FormData) => {
+        console.log(JSON.stringify(fd))
+        setOpen(false)
+    }
     const services = [
         {key: "turnKey", label: "Под ключ"},
         {key: "rent", label: "Аренда"},
@@ -41,7 +46,7 @@ const OrderService = ({defaultValue}: {defaultValue?: 'turnKey' | 'rent' | 'buy'
             setOpen={setOpen}
             open={open}
         >
-            <form className={'flex flex-col gap-4'}>
+            <form action={handleSubmit} onClick={(e) => e.stopPropagation()} className={'flex flex-col gap-4'}>
                 <Select
                     label="Услуга"
                     placeholder="Выберите услугу"
