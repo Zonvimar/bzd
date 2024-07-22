@@ -41,18 +41,17 @@ const OrderServiceModal = ({defaultValue}: {defaultValue?: 'turnKey' | 'rent' | 
                                       onClick={(e) => e.stopPropagation()}
                                       className={'flex flex-col gap-4'}
                                 >
-                                    <Input label={'Ваше имя'} variant={'faded'} isRequired/>
-                                    <Input label={'Номер телефона'} variant={'faded'} isRequired/>
+                                    <Input label={'Ваше имя'} variant={'bordered'} required isRequired/>
+                                    <Input label={'Номер телефона'} variant={'bordered'} required isRequired/>
                                     {/*<Input label={'Электронная почта'} variant={'faded'} isRequired/>*/}
                                     {/*<Textarea label={'Ваш вопрос'} variant={'faded'} isRequired/>*/}
-                                    <Button className={'w-full px-8'} color={'primary'}
-                                            type={'submit'}>Заказать</Button>
+                                    {/*<Button className={'w-full px-8'} color={'primary'}*/}
+                                    {/*        type={'submit'}>Заказать</Button>*/}
                                     <div className={'flex gap-2'}>
                                         <Button color="danger" variant="flat" className={'px-4'} onPress={onClose}>
                                             Отмена
                                         </Button>
-                                        <Button className={'w-full px-8'} color={'primary'} type={'submit'}>Отправить
-                                            заявку</Button>
+                                        <Button className={'w-full px-8'} color={'primary'} type={'submit'}>Заказать</Button>
                                     </div>
                                 </form>
                             </ModalBody>
