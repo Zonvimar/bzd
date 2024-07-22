@@ -1,6 +1,5 @@
-import {Button} from "@nextui-org/react";
 import React from "react";
-import OrderService from "@/components/widgets/forms/OrderService";
+import OrderServiceModal from "@/components/widgets/forms/OrderServiceModal";
 
 
 const ServicesHeader = ({title, description, defaultValue}: {title: string, description: string, defaultValue: 'turnKey' | 'rent' | 'buy' | 'install'}) => {
@@ -16,9 +15,7 @@ const ServicesHeader = ({title, description, defaultValue}: {title: string, desc
                         <p className={'text-white text-xl font-light'}>
                             {description}
                         </p>
-                        <OrderService defaultValue={defaultValue}/>
-                        {/*<Button color={'primary'} variant={'solid'} size={'lg'} className={'px-8 w-auto lg:w-fit'}>Заказать*/}
-                        {/*    услугу</Button>*/}
+                        <OrderServiceModal defaultValue={defaultValue}/>
                     </div>
                 </div>
             </div>

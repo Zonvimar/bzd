@@ -122,13 +122,13 @@ const PackingOfSafetyBags = () => {
                                         {/*<TableCell>11,04</TableCell>*/}
                                         {/*<TableCell>0,03</TableCell>*/}
                                     </TableRow>
-                                    <TableRow key="5">
+                                    <TableRow key="6">
                                         <TableCell>Отбойный брус</TableCell>
                                         <TableCell>368</TableCell>
                                         {/*<TableCell>11,04</TableCell>*/}
                                         {/*<TableCell>0,03</TableCell>*/}
                                     </TableRow>
-                                    <TableRow key="5">
+                                    <TableRow key="7">
                                         <TableCell>Клеменные болты в сборе</TableCell>
                                         <TableCell>92</TableCell>
                                         {/*<TableCell>11,04</TableCell>*/}
@@ -326,13 +326,13 @@ const PackingOfSafetyBags = () => {
                                         {/*<TableCell>11,04</TableCell>*/}
                                         {/*<TableCell>0,03</TableCell>*/}
                                     </TableRow>
-                                    <TableRow key="5">
+                                    <TableRow key="6">
                                         <TableCell>Отбойный брус</TableCell>
                                         <TableCell>736</TableCell>
                                         {/*<TableCell>11,04</TableCell>*/}
                                         {/*<TableCell>0,03</TableCell>*/}
                                     </TableRow>
-                                    <TableRow key="5">
+                                    <TableRow key="7">
                                         <TableCell>Клеменные болты в сборе</TableCell>
                                         <TableCell>184</TableCell>
                                         {/*<TableCell>11,04</TableCell>*/}

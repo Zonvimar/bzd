@@ -4,8 +4,7 @@ import PackingOfSafetyBags from "@/components/widgets/PackingOfSafetyBags";
 import CooperationOptions from "@/components/widgets/CooperationOptions";
 import Equipment from "@/components/widgets/Equipment";
 import Link from "next/link";
-import OrderService from "@/components/widgets/forms/OrderService";
-import TestModal from "@/components/shared/TestModal";
+import OrderServiceModal from "@/components/widgets/forms/OrderServiceModal";
 
 const Page = async() => {
 
@@ -30,8 +29,8 @@ const Page = async() => {
                                 Работаем по всей России
                                 <hr className={'w-8 h-[4px] lg:hidden bg-primary rounded border-0'}/>
                             </p>jj
-                            <OrderService/>
-                            <TestModal/>
+                            {/*<OrderService/>*/}
+                            <OrderServiceModal/>
                         </div>
                         {/*</div>*/}
                     </div>
