@@ -23,7 +23,7 @@ const Page = async() => {
                     <AdditionalServices title={'Дополнительные услуги'}
                         description={'Перечень дополнительных услуг, которые необходимы для полной реализации задачи.'}
                     />
-                    <PickupConditions/>
+                    <PickupConditions defaultValue={'rent'}/>
                 </div>
             </div>
         </Suspense>

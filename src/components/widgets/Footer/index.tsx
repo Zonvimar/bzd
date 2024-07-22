@@ -3,6 +3,7 @@ import {Chip} from "@nextui-org/chip";
 import {Mail, Phone} from "lucide-react";
 import React from "react";
 import Link from "next/link";
+import OrderService from "@/components/widgets/forms/OrderService";
 
 
 const Footer = () => {
@@ -40,10 +41,11 @@ const Footer = () => {
                     </Chip>
                 </div>
                 <div className={'flex flex-col gap-1.5 justify-between'}>
-                    <Button color={'primary'} variant={'solid'} size={'lg'} className={'px-8 w-fit'}>Рассчитать
-                        стоимость</Button>
+                    <OrderService/>
+                    {/*<Button color={'primary'} variant={'solid'} size={'lg'} className={'px-8 w-fit'}>Рассчитать*/}
+                    {/*    стоимость</Button>*/}
                     <Link href={'/projects/'} className={'text-primary'}>
-                        <Button color={'primary'} variant={'ghost'} size={'lg'} className={'px-8 w-fit'}>Выполненные работы</Button>
+                        <Button color={'primary'} variant={'ghost'} size={'lg'} className={'px-2 w-fit'}>Выполненные работы</Button>
                     </Link>
                 </div>
             </div>

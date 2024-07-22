@@ -25,7 +25,7 @@ const Page = async() => {
                                             'это выполнение всех необходимых мероприятий для получения акта-допуска' +
                                             ' от РЖД на выполнение прокола под железной дорогой.'}
                     />
-                    <PickupConditions/>
+                    <PickupConditions defaultValue={'turnKey'}/>
                 </div>
             </div>
         </Suspense>

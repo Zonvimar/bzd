@@ -69,7 +69,7 @@ const Page = async() => {
                         {/*</div>*/}
                     </div>
                     {/*////*/}
-                    <PickupConditions/>
+                    <PickupConditions defaultValue={'install'}/>
 
                     {/*<PackingOfSafetyBags/>*/}
                     {/*<CooperationOptions/>*/}

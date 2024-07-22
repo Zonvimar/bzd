@@ -2,9 +2,10 @@ import {Card, CardBody, CardHeader} from "@nextui-org/card";
 import {Button, Divider, Table, TableBody, TableCell, TableColumn, TableHeader, TableRow} from "@nextui-org/react";
 import React from "react";
 import {Check, Forklift, Truck, Users, X} from "lucide-react";
+import OrderWithDeliveryModal from "@/components/widgets/forms/OrderWithDeliveryModal";
 
 
-const PickupConditions = () => {
+const PickupConditions = ({defaultValue}: {defaultValue: 'turnKey' | 'rent' | 'buy' | 'install'}) => {
     return (
         <div className={'flex flex-col text-start gap-8 h-full'}>
             <div className={'flex flex-col gap-2'}>
@@ -69,7 +70,8 @@ const PickupConditions = () => {
                                 25 метров – 250 RUB/км
                             </p>
                         </div>
-                        <Button color={'primary'} variant={'ghost'} className={'min-h-10'}>Заказать с доставкой</Button>
+                        <OrderWithDeliveryModal defaultValue={defaultValue}/>
+                        {/*<Button color={'primary'} variant={'ghost'} className={'min-h-10'}>Заказать с доставкой</Button>*/}
                     </CardBody>
                 </Card>
             </div>
