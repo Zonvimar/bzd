@@ -3,6 +3,7 @@ import ServicesHeader from "@/components/widgets/ServicesHeader";
 import PackingOfSafetyBags from "@/components/widgets/PackingOfSafetyBags";
 import AdditionalServices from "@/components/widgets/AdditionalServices";
 import PickupConditions from "@/components/widgets/PickupConditions";
+import TableDeadlines from "@/components/widgets/TableDeadlines";
 
 const Page = async() => {
 
@@ -26,6 +27,7 @@ const Page = async() => {
                                             ' от РЖД на выполнение прокола под железной дорогой.'}
                     />
                     <PickupConditions defaultValue={'turnKey'}/>
+                    <TableDeadlines/>
                 </div>
             </div>
         </Suspense>
