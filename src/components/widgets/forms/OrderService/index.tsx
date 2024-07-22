@@ -91,10 +91,10 @@ const OrderService = ({defaultValue}: {defaultValue?: 'turnKey' | 'rent' | 'buy'
                         ))}
                     </Select>
                 }
-                <Input label={'Место установки'} variant={'faded'} isRequired/>
-                <Input label={'Ваше имя'} variant={'faded'} isRequired/>
-                <Input label={'Номер телефона'} variant={'faded'} isRequired/>
-                <Input label={'Электронная почта'} variant={'faded'} isRequired/>
+                <Input label={'Место установки'} variant={'faded'} required isRequired/>
+                <Input label={'Ваше имя'} variant={'faded'} isRequired required/>
+                <Input label={'Номер телефона'} variant={'faded'} isRequired required/>
+                <Input label={'Электронная почта'} variant={'faded'} isRequired required/>
                 <Button className={'w-full px-8'} color={'primary'} type={'submit'}>Отправить заявку</Button>
             </form>
         </ModalComponent>

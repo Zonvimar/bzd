@@ -94,10 +94,10 @@ const OrderWithDeliveryModal = ({defaultValue}: {defaultValue?: 'turnKey' | 'ren
                         ))}
                     </Select>
                 }
-                <Input label={'Место установки'} variant={'faded'} isRequired/>
-                <Input label={'Ваше имя'} variant={'faded'} isRequired/>
-                <Input label={'Номер телефона'} variant={'faded'} isRequired/>
-                <Input label={'Электронная почта'} variant={'faded'} isRequired/>
+                <Input label={'Место установки'} variant={'faded'} required isRequired/>
+                <Input label={'Ваше имя'} variant={'faded'} required isRequired/>
+                <Input label={'Номер телефона'} variant={'faded'} required isRequired/>
+                <Input label={'Электронная почта'} variant={'faded'} required isRequired/>
                 <Button className={'w-full px-8'} color={'primary'} type={'submit'}>Отправить заявку</Button>
             </form>
         </ModalComponent>
