@@ -1,3 +1,4 @@
+'use client'
 import {Input, Textarea} from "@nextui-org/input";
 import {Button} from "@nextui-org/react";
 import React from "react";
