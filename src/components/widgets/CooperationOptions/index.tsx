@@ -24,7 +24,7 @@ const CooperationOptions = () => {
                     <CardBody className="overflow-hidden max-h-[382px] py-2 px-2 flex flex-col justify-between gap-4">
                         <p className={'font-bold text-xl'}>Работа "Под ключ"</p>
                         <p>Аренда, эксплуатация, установка, а так же разработка и согласование документации включены в стоимость.</p>
-                        <Link href={'/services/turnKey/'} className={'text-primary'}>
+                        <Link href={'/services/turnkey/'} className={'text-primary'}>
                             <Button className={'w-fit px-8'} variant={'ghost'} color={'primary'}>Подробнее</Button>
                         </Link>
                         {/*<Button className={'w-fit px-8'} variant={'ghost'} color={'primary'}>Подробнее</Button>*/}
