@@ -1,49 +1,67 @@
 'use client'
-import {Button} from "@nextui-org/react";
-import {Phone} from "lucide-react";
+import {
+    Modal,
+    ModalBody,
+    ModalContent,
+    ModalHeader,
+} from "@nextui-org/modal";
+import {Button} from "@nextui-org/button";
+import {Input} from "@nextui-org/input";
 import React, {useState} from "react";
-import ModalComponent from "@/components/shared/ModalComponent";
-import {Pencil1Icon} from "@radix-ui/react-icons";
-import {Input, Textarea} from "@nextui-org/input";
 
 
-const OrderCallButton = () => {
+const OrderServiceModal = ({defaultValue}: {defaultValue?: 'turnKey' | 'rent' | 'buy' | 'install'}) => {
     const [open, setOpen] = useState(false)
 
-    const handleSubmit = (fd: FormData) => {
-        console.log(JSON.stringify(fd))
+    const handleSubmit = (formData: FormData) => {
+        // for (const [key, value] of formData.entries()) {
+        //     console.log(key, value);
+        // }
         setOpen(false)
+        // onOpenChange(false)
     }
 
     return (
-        <ModalComponent
-            // isIcon
-            modalSize={'sm'}
-            // icon={<Phone strokeWidth={1.25} width={20}/>}
-            label={'Заказать звонок'}
-            buttonVariant={'ghost'}
-            modalHeader={"Заказать звонок"}
-            setOpen={setOpen}
-            open={open}
-        >
-            <form action={handleSubmit} onClick={(e) => e.stopPropagation()} className={'flex flex-col gap-4'}>
-                <Input label={'Ваше имя'} variant={'faded'} isRequired/>
-                <Input label={'Номер телефона'} variant={'faded'} isRequired/>
-                {/*<Input label={'Электронная почта'} variant={'faded'} isRequired/>*/}
-                {/*<Textarea label={'Ваш вопрос'} variant={'faded'} isRequired/>*/}
-                <Button className={'w-full px-8'} color={'primary'} type={'submit'}>Заказать</Button>
-            </form>
-        </ModalComponent>
-        // <Button
-        //     variant="bordered" isIconOnly
-        //     href={"tel:+79265631107"}
-        // >
-        //     <Phone strokeWidth={1.25} width={20}/>
-        //     {/*<a href="tel:+79265631107" className={'w-fit flex gap-2 items-center'}>*/}
-        //     {/*    <Phone/>+7 (926) 563-11-07*/}
-        //     {/*</a>*/}
-        // </Button>
+        <>
+            <Button color={'primary'} onClick={() => setOpen(true)} variant={'ghost'} className={'min-h-10'}>
+                Заказать звонок
+            </Button>
+            <Modal
+                isOpen={open}
+                onOpenChange={setOpen}
+                placement="top-center"
+                className={'max-h-[85dvh]'}
+            >
+                <ModalContent>
+                    {(onClose) => (
+                        <>
+                            <ModalHeader className="flex flex-col gap-1">Заказать звонок</ModalHeader>
+                            <ModalBody>
+                                <form action={handleSubmit}
+                                      onClick={(e) => e.stopPropagation()}
+                                      className={'flex flex-col gap-4'}
+                                >
+                                    <Input label={'Ваше имя'} variant={'faded'} isRequired/>
+                                    <Input label={'Номер телефона'} variant={'faded'} isRequired/>
+                                    {/*<Input label={'Электронная почта'} variant={'faded'} isRequired/>*/}
+                                    {/*<Textarea label={'Ваш вопрос'} variant={'faded'} isRequired/>*/}
+                                    <Button className={'w-full px-8'} color={'primary'}
+                                            type={'submit'}>Заказать</Button>
+                                    <div className={'flex gap-2'}>
+                                        <Button color="danger" variant="flat" className={'px-4'} onPress={onClose}>
+                                            Отмена
+                                        </Button>
+                                        <Button className={'w-full px-8'} color={'primary'} type={'submit'}>Отправить
+                                            заявку</Button>
+                                    </div>
+                                </form>
+                            </ModalBody>
+                        </>
+                    )}
+                </ModalContent>
+            </Modal>
+        </>
     )
 }
 
-export default OrderCallButton;
+export default OrderServiceModal;
