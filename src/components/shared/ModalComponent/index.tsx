@@ -105,7 +105,7 @@ const ModalComponent: FC<ModalComponentProps> = ({
                 </Button>
             }
                    placement={'center'} scrollBehavior={'outside'}
-                   isOpen={open} onOpenChange={setOpen} size={modalSize} className={`${withoutModalHeader && 'p-0 w-fit h-fit'} overflow-hidden max-h-[100dvh]`}>
+                   isOpen={open} onOpenChange={setOpen} size={modalSize}>
                 <ModalContent>
                     {(onClose) => (
                         <>
@@ -114,7 +114,7 @@ const ModalComponent: FC<ModalComponentProps> = ({
                                     {modalHeader}
                                 </ModalHeader>
                             }
-                            <ModalBody className={`${withoutModalHeader && 'p-0'} overflow-auto`}>
+                            <ModalBody>
                                 {children}
                             </ModalBody>
                             {!withoutAction &&
