@@ -45,6 +45,7 @@ const TestModal = () => {
                 isOpen={isOpen}
                 onOpenChange={onOpenChange}
                 placement="top-center"
+                className={'max-w-[85dvh]'}
             >
                 <ModalContent>
                     {(onClose) => (
