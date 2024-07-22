@@ -1,20 +1,26 @@
 'use client'
-import {Button, Select, SelectItem} from "@nextui-org/react";
-import {Phone} from "lucide-react";
+import {
+    Modal,
+    ModalBody,
+    ModalContent,
+    ModalHeader,
+} from "@nextui-org/modal";
+import {Button} from "@nextui-org/button";
+import {Input} from "@nextui-org/input";
 import React, {useState} from "react";
-import ModalComponent from "@/components/shared/ModalComponent";
-import {Pencil1Icon} from "@radix-ui/react-icons";
-import {Input, Textarea} from "@nextui-org/input";
-import TextField from "@/components/shared/inputs/TextField";
+import {Select, SelectItem} from "@nextui-org/react";
 
 
-const OrderWithDeliveryModal = ({defaultValue}: {defaultValue?: 'turnKey' | 'rent' | 'buy' | 'install'}) => {
+const OrderServiceModal = ({defaultValue}: {defaultValue?: 'turnKey' | 'rent' | 'buy' | 'install'}) => {
     const [open, setOpen] = useState(false)
     const [service, setService] = useState<string | undefined>(defaultValue)
 
-    const handleSubmit = (fd: FormData) => {
-        console.log(JSON.stringify(fd))
+    const handleSubmit = (formData: FormData) => {
+        // for (const [key, value] of formData.entries()) {
+        //     console.log(key, value);
+        // }
         setOpen(false)
+        // onOpenChange(false)
     }
 
     const services = [
@@ -34,89 +40,95 @@ const OrderWithDeliveryModal = ({defaultValue}: {defaultValue?: 'turnKey' | 'ren
     ]
 
     return (
-        <ModalComponent
-            modalSize={'sm'}
-            label={'Оформление услуги'}
-            nonButtonTrigger={
-                // <Button color={'primary'} onClick={() => setOpen(true)} variant={'solid'} size={'lg'} className={'px-8 w-auto lg:w-fit'}>
-                //     Заказать услугу
-                // </Button>
-                <Button color={'primary'} onClick={() => setOpen(true)} variant={'ghost'} className={'min-h-10'}>
-                    Заказать с доставкой
-                </Button>
-            }
-            buttonVariant={'solid'}
-            modalHeader={"Оформление услуги"}
-            setOpen={setOpen}
-            open={open}
-        >
-            <form action={handleSubmit} onClick={(e) => e.stopPropagation()} className={'flex flex-col gap-4'}>
-                <Select
-                    label="Услуга"
-                    placeholder="Выберите услугу"
-                    defaultSelectedKeys={defaultValue ? [defaultValue] : undefined}
-                    name={'service'}
-                    onChange={(e) => setService(e.target.value)}
-                    isRequired
-                >
-                    {services.map((service) => (
-                        <SelectItem key={service.key}>
-                            {service.label}
-                        </SelectItem>
-                    ))}
-                </Select>
-                <Select
-                    label="Длина страховочного пакета"
-                    placeholder="Выберите длину"
-                    name={'length'}
-                    defaultSelectedKeys={['12,5']}
-                    isRequired
-                >
-                    {lengths.map((length) => (
-                        <SelectItem key={length.key}>
-                            {length.label}
-                        </SelectItem>
-                    ))}
-                </Select>
-                <TextField label={'Необходимое количество пакетов'} name={'count'} variant={'faded'} isRequired/>
-                {/*<Input label={'Необходимое количество пакетов'} name={'count'} variant={'faded'} isRequired/>*/}
-                {service === 'rent' && <Input label={'Срок аренды'} name={'rent'} variant={'faded'} isRequired/>}
-                {service === 'rent' || service === 'buy' &&
-                    <Select
-                        label="Способ получения"
-                        placeholder="Выберите способ"
-                        name={'wayGetting'}
-                        defaultSelectedKeys={['delivery']}
-                        isRequired
-                    >
-                        {waysGetting.map((way) => (
-                            <SelectItem key={way.key}>
-                                {way.label}
-                            </SelectItem>
-                        ))}
-                    </Select>
-                }
-                <TextField label={'Место установки'} variant={'faded'} required isRequired/>
-                {/*<Input label={'Место установки'} variant={'faded'} required isRequired/>*/}
-                <TextField label={'Ваше имя'} variant={'faded'} required isRequired/>
-                {/*<Input label={'Ваше имя'} variant={'faded'} required isRequired/>*/}
-                <TextField label={'Номер телефона'} variant={'faded'} required isRequired/>
-                {/*<Input label={'Номер телефона'} variant={'faded'} required isRequired/>*/}
-                <TextField label={'Электронная почта'} variant={'faded'} required isRequired/>
-                {/*<Input label={'Электронная почта'} variant={'faded'} required isRequired/>*/}
-                <Button className={'w-full px-8'} color={'primary'} type={'submit'}>Отправить заявку</Button>
-            </form>
-        </ModalComponent>
-        // <Button
-        //     variant="bordered" isIconOnly
-        //     href={"tel:+79265631107"}
-        // >
-        //     <Phone strokeWidth={1.25} width={20}/>
-        //     {/*<a href="tel:+79265631107" className={'w-fit flex gap-2 items-center'}>*/}
-        //     {/*    <Phone/>+7 (926) 563-11-07*/}
-        //     {/*</a>*/}
-        // </Button>
+        <>
+            <Button color={'primary'} onClick={() => setOpen(true)} variant={'ghost'} className={'min-h-10'}>
+                Заказать с доставкой
+            </Button>
+            <Modal
+                isOpen={open}
+                onOpenChange={setOpen}
+                placement="top-center"
+                className={'max-h-[85dvh]'}
+            >
+                <ModalContent>
+                    {(onClose) => (
+                        <>
+                            <ModalHeader className="flex flex-col gap-1">Оформление услуги</ModalHeader>
+                            <ModalBody>
+                                <form action={handleSubmit}
+                                      onClick={(e) => e.stopPropagation()}
+                                      className={'flex flex-col gap-4'}
+                                >
+                                    <Select
+                                        autoFocus
+                                        label="Услуга"
+                                        placeholder="Выберите услугу"
+                                        defaultSelectedKeys={defaultValue ? [defaultValue] : undefined}
+                                        name={'service'}
+                                        onChange={(e) => setService(e.target.value)}
+                                        isRequired
+                                        variant={'faded'}
+                                    >
+                                        {services.map((service) => (
+                                            <SelectItem key={service.key}>
+                                                {service.label}
+                                            </SelectItem>
+                                        ))}
+                                    </Select>
+                                    <Select
+                                        label="Длина страховочного пакета"
+                                        placeholder="Выберите длину"
+                                        name={'length'}
+                                        defaultSelectedKeys={['12,5']}
+                                        isRequired
+                                        variant={'faded'}
+                                    >
+                                        {lengths.map((length) => (
+                                            <SelectItem key={length.key}>
+                                                {length.label}
+                                            </SelectItem>
+                                        ))}
+                                    </Select>
+                                    {/*<TextField label={'Необходимое количество пакетов'} name={'count'} variant={'faded'} required isRequired/>*/}
+                                    {service === 'rent' || service === 'buy' &&
+                                        <Select
+                                            label="Способ получения"
+                                            placeholder="Выберите способ"
+                                            name={'wayGetting'}
+                                            defaultSelectedKeys={['delivery']}
+                                            isRequired
+                                            variant={'faded'}
+                                        >
+                                            {waysGetting.map((way) => (
+                                                <SelectItem key={way.key}>
+                                                    {way.label}
+                                                </SelectItem>
+                                            ))}
+                                        </Select>
+                                    }
+                                    <Input label={'Необходимое количество пакетов'} name={'count'} variant={'bordered'} required isRequired/>
+                                    {service === 'rent' && <Input label={'Срок аренды'} name={'rent'} variant={'bordered'} required isRequired/>}
+                                    {/*<TextField label={'Место установки'} variant={'faded'} required isRequired/>*/}
+                                    <Input label={'Место установки'} name={'place'} variant={'bordered'} required isRequired/>
+                                    {/*<TextField label={'Ваше имя'} variant={'faded'} isRequired required/>*/}
+                                    <Input label={'Ваше имя'} variant={'bordered'} name={'name'} isRequired required/>
+                                    {/*<TextField label={'Номер телефона'} variant={'faded'} isRequired required/>*/}
+                                    <Input label={'Номер телефона'} variant={'bordered'} name={'phone'} isRequired required/>
+                                    {/*<TextField label={'Электронная почта'} variant={'faded'} isRequired required/>*/}
+                                    <div className={'flex gap-2'}>
+                                        <Button color="danger" variant="flat" className={'px-4'} onPress={onClose}>
+                                            Отмена
+                                        </Button>
+                                        <Button className={'w-full px-8'} color={'primary'} type={'submit'}>Отправить заявку</Button>
+                                    </div>
+                                </form>
+                            </ModalBody>
+                        </>
+                    )}
+                </ModalContent>
+            </Modal>
+        </>
     )
 }
 
-export default OrderWithDeliveryModal;
+export default OrderServiceModal;
