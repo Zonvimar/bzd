@@ -5,6 +5,7 @@ import React, {useState} from "react";
 import ModalComponent from "@/components/shared/ModalComponent";
 import {Pencil1Icon} from "@radix-ui/react-icons";
 import {Input, Textarea} from "@nextui-org/input";
+import TextField from "@/components/shared/inputs/TextField";
 
 
 const OrderWithDeliveryModal = ({defaultValue}: {defaultValue?: 'turnKey' | 'rent' | 'buy' | 'install'}) => {
@@ -77,7 +78,8 @@ const OrderWithDeliveryModal = ({defaultValue}: {defaultValue?: 'turnKey' | 'ren
                         </SelectItem>
                     ))}
                 </Select>
-                <Input label={'Необходимое количество пакетов'} name={'count'} variant={'faded'} isRequired/>
+                <TextField label={'Необходимое количество пакетов'} name={'count'} variant={'faded'} isRequired/>
+                {/*<Input label={'Необходимое количество пакетов'} name={'count'} variant={'faded'} isRequired/>*/}
                 {service === 'rent' && <Input label={'Срок аренды'} name={'rent'} variant={'faded'} isRequired/>}
                 {service === 'rent' || service === 'buy' &&
                     <Select
@@ -94,10 +96,14 @@ const OrderWithDeliveryModal = ({defaultValue}: {defaultValue?: 'turnKey' | 'ren
                         ))}
                     </Select>
                 }
-                <Input label={'Место установки'} variant={'faded'} required isRequired/>
-                <Input label={'Ваше имя'} variant={'faded'} required isRequired/>
-                <Input label={'Номер телефона'} variant={'faded'} required isRequired/>
-                <Input label={'Электронная почта'} variant={'faded'} required isRequired/>
+                <TextField label={'Место установки'} variant={'faded'} required isRequired/>
+                {/*<Input label={'Место установки'} variant={'faded'} required isRequired/>*/}
+                <TextField label={'Ваше имя'} variant={'faded'} required isRequired/>
+                {/*<Input label={'Ваше имя'} variant={'faded'} required isRequired/>*/}
+                <TextField label={'Номер телефона'} variant={'faded'} required isRequired/>
+                {/*<Input label={'Номер телефона'} variant={'faded'} required isRequired/>*/}
+                <TextField label={'Электронная почта'} variant={'faded'} required isRequired/>
+                {/*<Input label={'Электронная почта'} variant={'faded'} required isRequired/>*/}
                 <Button className={'w-full px-8'} color={'primary'} type={'submit'}>Отправить заявку</Button>
             </form>
         </ModalComponent>
