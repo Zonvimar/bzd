@@ -19,7 +19,7 @@ const TableDeadlines = () => {
                 <tr>
                     <td className="border border-black/40 w-[20px] fw-medium bg-primary bg-opacity-40 px-2 py-3">Задача</td>
                     <td className="border border-black/40 w-[20px] fw-medium text-center bg-primary bg-opacity-40 px-6 py-3"
-                        colSpan="70">Сроки выполнения работ
+                        colSpan={70}>Сроки выполнения работ
                     </td>
                 </tr>
                 </thead>
@@ -56,7 +56,7 @@ const TableDeadlines = () => {
                         ППР на страхпакет
                     </td>
                     <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className="text-center bg-primary text-white" colSpan="3">3 дня*</td>
+                    <td className="text-center bg-primary text-white" colSpan={3}>3 дня*</td>
                     <td className={'border border-black/40 w-[20px]'}></td>
                     <td className={'border border-black/40 w-[20px]'}></td>
                     <td className={'border border-black/40 w-[20px]'}></td>
@@ -86,7 +86,7 @@ const TableDeadlines = () => {
                     <td className={'border border-black/40 w-[20px]'}></td>
                     <td className={'border border-black/40 w-[20px]'}></td>
                     <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className="text-center bg-primary text-white" rowSpan="4" colSpan="10" data-bs-toggle="tooltip"
+                    <td className="text-center bg-primary text-white" rowSpan={4} colSpan={10} data-bs-toggle="tooltip"
                         data-bs-placement="bottom"
                         data-bs-title="Проверка наличия инженерных коммуникаций, установка временных знаков в местах их расположения в зоне производства работ. Разработка мероприятий по обеспечению сохранности инженерных и кабельных коммуникаций.">23
                         дня*
@@ -169,7 +169,7 @@ const TableDeadlines = () => {
                     <td className={'border border-black/40 w-[20px]'}></td>
                     <td className={'border border-black/40 w-[20px]'}></td>
                     <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className="text-center bg-primary text-white" colSpan="5" data-bs-toggle="tooltip">5 дней*</td>
+                    <td className="text-center bg-primary text-white" colSpan={5} data-bs-toggle="tooltip">5 дней*</td>
                     <td className={'border border-black/40 w-[20px]'}></td>
                     <td className={'border border-black/40 w-[20px]'}></td>
                     <td className={'border border-black/40 w-[20px]'}></td>
@@ -197,7 +197,7 @@ const TableDeadlines = () => {
                     <td className={'border border-black/40 w-[20px]'}></td>
                     <td className={'border border-black/40 w-[20px]'}></td>
                     <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className="border-b border-r border-black/40 text-center bg-primary text-white" colSpan="3">3
+                    <td className="border-b border-r border-black/40 text-center bg-primary text-white" colSpan={3}>3
                         дня*
                     </td>
 
