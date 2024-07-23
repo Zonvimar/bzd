@@ -24,6 +24,9 @@ const Page = async() => {
                                 С 2019 года наша компания производит, устанавливает<br/> и предоставляет в аренду
                                 рельсовые страховочные пакеты
                             </p>
+                            <p className={'text-white text-xl font-bold'}>
+                                Страховочный пакет от 1 199 000 руб*
+                            </p>
                             <p className={'text-white text-xl font-light flex gap-2 items-center justify-center lg:justify-start'}>
                                 <hr className={'w-8 h-[4px] bg-primary rounded border-0'}/>
                                 Работаем по всей России
