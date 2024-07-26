@@ -14,7 +14,7 @@ const CooperationOptionsVersion2 = () => {
                     Универсальный комплект услуг для эффективного применения страховочных рельсовых пакетов.
                 </p>
             </div>
-            <div className={'grid grid-cols-1 lg:grid-cols-4 w-full gap-6'}>
+            <div className={'grid grid-cols-1 lg:grid-cols-2 w-full gap-6'}>
                 <Card className={"w-full hover:shadow-2xl transition-shadow"}>
                     <CardBody className="overflow-hidden py-2 px-2 flex flex-col justify-between gap-4">
                         <p className={'font-bold text-xl'}>Под ключ</p>
@@ -29,20 +29,20 @@ const CooperationOptionsVersion2 = () => {
                         <Link href={'/services/rent/'} className={'text-primary underline'}>Подробнее</Link>
                     </CardBody>
                 </Card>
-                <Card className={"w-full hover:shadow-2xl transition-shadow"}>
-                    <CardBody className="overflow-hidden py-2 px-2 flex flex-col justify-between gap-4">
-                        <p className={'font-bold text-xl'}>Продажа</p>
-                        <p>Изготовим и доставим необходимое количество страховочных пакетов в срок от 3-х рабочих дней.</p>
-                        <Link href={'/services/buy/'} className={'text-primary underline'}>Подробнее</Link>
-                    </CardBody>
-                </Card>
-                <Card className={"w-full hover:shadow-2xl transition-shadow"}>
-                    <CardBody className="overflow-hidden py-2 px-2 flex flex-col justify-between gap-4">
-                        <p className={'font-bold text-xl'}>Установка</p>
-                        <p>Монтаж и демонтаж ваших или приобретенных у нас страховочных пакетов на железной дороге.</p>
-                        <Link href={'/services/installation/'} className={'text-primary underline'}>Подробнее</Link>
-                    </CardBody>
-                </Card>
+                {/*<Card className={"w-full hover:shadow-2xl transition-shadow"}>*/}
+                {/*    <CardBody className="overflow-hidden py-2 px-2 flex flex-col justify-between gap-4">*/}
+                {/*        <p className={'font-bold text-xl'}>Продажа</p>*/}
+                {/*        <p>Изготовим и доставим необходимое количество страховочных пакетов в срок от 3-х рабочих дней.</p>*/}
+                {/*        <Link href={'/services/buy/'} className={'text-primary underline'}>Подробнее</Link>*/}
+                {/*    </CardBody>*/}
+                {/*</Card>*/}
+                {/*<Card className={"w-full hover:shadow-2xl transition-shadow"}>*/}
+                {/*    <CardBody className="overflow-hidden py-2 px-2 flex flex-col justify-between gap-4">*/}
+                {/*        <p className={'font-bold text-xl'}>Установка</p>*/}
+                {/*        <p>Монтаж и демонтаж ваших или приобретенных у нас страховочных пакетов на железной дороге.</p>*/}
+                {/*        <Link href={'/services/installation/'} className={'text-primary underline'}>Подробнее</Link>*/}
+                {/*    </CardBody>*/}
+                {/*</Card>*/}
             </div>
         </div>
     )

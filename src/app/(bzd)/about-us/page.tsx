@@ -30,28 +30,28 @@ const Page = async() => {
             <div className={'max-w-7xl mx-auto px-2 lg:px-8 pt-10 gap-8 flex flex-col'}>
                 <div
                     className={'grid grid-cols-1 lg:grid-cols-2 justify-between gap-4 mx-auto'}>
-                    <div className={'flex gap-4 '}>
+                    <div className={'flex gap-4'}>
                         <Divider orientation={'vertical'} className={'w-1 bg-primary lg:flex hidden'}/>
                         <p className={''}>
                             Мы предлагаем заказчикам готовое решение, которое подразумевает передачу всех задач под наш
                             контроль.
                             <br/><br/>
-                            Наш опыт позволяет предвидеть трудности, которые могут
-                            возникнуть на всех этапах
+                            Нашей компанией на Московской железной дороге установлено более 1000 комплектов,
+                            на Октябрьской железной дороге и в других регионах более 500 комплектов
                         </p>
                     </div>
-                    <div className={'grid grid-cols-1 lg:grid-cols-2 gap-6 justify-between'}>
-                        <div className={'flex flex-col gap-3'}>
-                            <p className={'font-bold'}><span className={'text-primary text-2xl'}>70+</span><br/>страховочных
-                                пакетов</p>
-                            <p>Установлено по всей России</p>
+                    {/*<div className={'grid grid-cols-1 gap-6 justify-between'}>*/}
+                        <div className={'grid grid-cols-1 justify-center h-fit gap-3 lg:mx-auto items-start'}>
+                            <p className={'font-bold'}><span className={'text-primary text-2xl'}>Более 1500 страховочных
+                                пакетов</span></p>
+                            <p className={'font-bold'}>Установлено по всей России</p>
                         </div>
-                        <div className={'flex flex-col gap-3'}>
-                            <p className={'font-bold'}><span className={'text-primary text-2xl'}>45+</span><br/>страховочных
-                                пакетов</p>
-                            <p>Изготовлено</p>
-                        </div>
-                    </div>
+                        {/*<div className={'flex flex-col gap-3'}>*/}
+                        {/*    <p className={'font-bold'}><span className={'text-primary text-2xl'}>45+</span><br/>страховочных*/}
+                        {/*        пакетов</p>*/}
+                        {/*    <p>Изготовлено</p>*/}
+                        {/*</div>*/}
+                    {/*</div>*/}
                 </div>
                 <CooperationOptionsVersion2/>
                 <div className={'w-full h-full flex flex-col text-start gap-8'}>

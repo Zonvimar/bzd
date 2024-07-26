@@ -30,20 +30,20 @@ const CooperationOptions = () => {
                         {/*<Button className={'w-fit px-8'} variant={'ghost'} color={'primary'}>Подробнее</Button>*/}
                     </CardBody>
                 </Card>
-                <Card className={"w-full hover:shadow-2xl transition-shadow"}>
-                    {/*<CardHeader className="py-2 px-2 flex-col items-start">*/}
-                    {/*    /!*<div>*!/*/}
-                    {/*    /!*</div>*!/*/}
-                    {/*</CardHeader>*/}
-                    <CardBody className="overflow-hidden max-h-[382px] py-2 px-2 flex flex-col justify-between gap-4">
-                        <p className={'font-bold text-xl'}>Купить</p>
-                        <p>Рельсы и доставка оплачиваются отдельно.</p>
-                        <Link href={'/services/buy/'} className={'text-primary'}>
-                            <Button className={'w-fit px-8'} variant={'ghost'} color={'primary'}>Подробнее</Button>
-                        </Link>
-                        {/*<Button className={'w-fit px-8'} variant={'ghost'} color={'primary'}>Подробнее</Button>*/}
-                    </CardBody>
-                </Card>
+                {/*<Card className={"w-full hover:shadow-2xl transition-shadow"}>*/}
+                {/*    /!*<CardHeader className="py-2 px-2 flex-col items-start">*!/*/}
+                {/*    /!*    /!*<div>*!/*!/*/}
+                {/*    /!*    /!*</div>*!/*!/*/}
+                {/*    /!*</CardHeader>*!/*/}
+                {/*    <CardBody className="overflow-hidden max-h-[382px] py-2 px-2 flex flex-col justify-between gap-4">*/}
+                {/*        <p className={'font-bold text-xl'}>Купить</p>*/}
+                {/*        <p>Рельсы и доставка оплачиваются отдельно.</p>*/}
+                {/*        <Link href={'/services/buy/'} className={'text-primary'}>*/}
+                {/*            <Button className={'w-fit px-8'} variant={'ghost'} color={'primary'}>Подробнее</Button>*/}
+                {/*        </Link>*/}
+                {/*        /!*<Button className={'w-fit px-8'} variant={'ghost'} color={'primary'}>Подробнее</Button>*!/*/}
+                {/*    </CardBody>*/}
+                {/*</Card>*/}
                 <Card className={"w-full hover:shadow-2xl transition-shadow"}>
                     {/*<CardHeader className="py-2 px-2 flex-col items-start">*/}
                     {/*    /!*<div>*!/*/}
@@ -58,20 +58,20 @@ const CooperationOptions = () => {
                         {/*<Button className={'w-fit px-8'} variant={'ghost'} color={'primary'}>Подробнее</Button>*/}
                     </CardBody>
                 </Card>
-                <Card className={"w-full hover:shadow-2xl transition-shadow"}>
-                    {/*<CardHeader className="py-2 px-2 flex-col items-start">*/}
-                    {/*    /!*<div>*!/*/}
-                    {/*    /!*</div>*!/*/}
-                    {/*</CardHeader>*/}
-                    <CardBody className="overflow-hidden max-h-[382px] py-2 px-2 flex flex-col justify-between gap-4">
-                        <p className={'font-bold text-xl'}>Заказать установку</p>
-                        <p>Эксплуатация ваших страховочных пакетов или купленных/арендованных у нас.</p>
-                        <Link href={'/services/installation/'} className={'text-primary'}>
-                            <Button className={'w-fit px-8'} variant={'ghost'} color={'primary'}>Подробнее</Button>
-                        </Link>
-                        {/*<Button className={'w-fit px-8'} variant={'ghost'} color={'primary'}>Подробнее</Button>*/}
-                    </CardBody>
-                </Card>
+                {/*<Card className={"w-full hover:shadow-2xl transition-shadow"}>*/}
+                {/*    /!*<CardHeader className="py-2 px-2 flex-col items-start">*!/*/}
+                {/*    /!*    /!*<div>*!/*!/*/}
+                {/*    /!*    /!*</div>*!/*!/*/}
+                {/*    /!*</CardHeader>*!/*/}
+                {/*    <CardBody className="overflow-hidden max-h-[382px] py-2 px-2 flex flex-col justify-between gap-4">*/}
+                {/*        <p className={'font-bold text-xl'}>Заказать установку</p>*/}
+                {/*        <p>Эксплуатация ваших страховочных пакетов или купленных/арендованных у нас.</p>*/}
+                {/*        <Link href={'/services/installation/'} className={'text-primary'}>*/}
+                {/*            <Button className={'w-fit px-8'} variant={'ghost'} color={'primary'}>Подробнее</Button>*/}
+                {/*        </Link>*/}
+                {/*        /!*<Button className={'w-fit px-8'} variant={'ghost'} color={'primary'}>Подробнее</Button>*!/*/}
+                {/*    </CardBody>*/}
+                {/*</Card>*/}
             </div>
         </div>
     )

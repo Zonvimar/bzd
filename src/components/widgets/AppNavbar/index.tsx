@@ -90,20 +90,20 @@ const AppNavbar = () => {
                                 Аренда
                             </Link>
                         </NavbarMenuItem>
-                        <NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)}
-                                        isActive={pathname.includes('/services/buy')}>
-                            <Link href={'/services/buy'}
-                                  className={`transition-background items-center flex rounded-md justify-between `}>
-                                Покупка
-                            </Link>
-                        </NavbarMenuItem>
-                        <NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)}
-                                        isActive={pathname.includes('/services/installation')}>
-                            <Link href={'/services/installation'}
-                                  className={`transition-background items-center flex rounded-md justify-between `}>
-                                Установка
-                            </Link>
-                        </NavbarMenuItem>
+                        {/*<NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)}*/}
+                        {/*                isActive={pathname.includes('/services/buy')}>*/}
+                        {/*    <Link href={'/services/buy'}*/}
+                        {/*          className={`transition-background items-center flex rounded-md justify-between `}>*/}
+                        {/*        Покупка*/}
+                        {/*    </Link>*/}
+                        {/*</NavbarMenuItem>*/}
+                        {/*<NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)}*/}
+                        {/*                isActive={pathname.includes('/services/installation')}>*/}
+                        {/*    <Link href={'/services/installation'}*/}
+                        {/*          className={`transition-background items-center flex rounded-md justify-between `}>*/}
+                        {/*        Установка*/}
+                        {/*    </Link>*/}
+                        {/*</NavbarMenuItem>*/}
                     </AccordionItem>
                 </Accordion>
                 <NavbarMenuItem className={'px-2'} onClick={() => setIsMenuOpen(!isMenuOpen)} isActive={pathname.includes('/projects')}>
@@ -158,20 +158,20 @@ const AppNavbar = () => {
                         >
                             Аренда
                         </DropdownItem>
-                        <DropdownItem
-                            key="buy"
-                            href={'/services/buy/'}
-                            className={`${pathname.includes('/services/buy') ? 'bg-primary text-white' : ''}`}
-                        >
-                            Покупка
-                        </DropdownItem>
-                        <DropdownItem
-                            key="installation"
-                            href={'/services/installation/'}
-                            className={`${pathname.includes('/services/installation') ? 'bg-primary text-white' : ''}`}
-                        >
-                            Установка
-                        </DropdownItem>
+                        {/*<DropdownItem*/}
+                        {/*    key="buy"*/}
+                        {/*    href={'/services/buy/'}*/}
+                        {/*    className={`${pathname.includes('/services/buy') ? 'bg-primary text-white' : ''}`}*/}
+                        {/*>*/}
+                        {/*    Покупка*/}
+                        {/*</DropdownItem>*/}
+                        {/*<DropdownItem*/}
+                        {/*    key="installation"*/}
+                        {/*    href={'/services/installation/'}*/}
+                        {/*    className={`${pathname.includes('/services/installation') ? 'bg-primary text-white' : ''}`}*/}
+                        {/*>*/}
+                        {/*    Установка*/}
+                        {/*</DropdownItem>*/}
                     </DropdownMenu>
                 </Dropdown>
                 <NavbarItem isActive={pathname.includes('/projects')}>
