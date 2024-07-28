@@ -13,9 +13,22 @@ const Page = async() => {
             <div className={'flex flex-col gap-6'}>
                 <div
                     className={'bg-[url("/banner.jpg")] text-center sm:text-left flex items-center justify-center bg-cover bg-center bg-no-repeat h-[600px] backdrop-blur-lg'}>
+
                     <div
                         className={'w-full bg-black/70 h-full'}>
-                        {/*<div>*/}
+                        <div className={'bg-primary relative overflow-x-hidden'}>
+                            <div className={'text-white text-xl font-bold bg-primary flex items-center justify-between animate-marquee lg:animate-marquee2 whitespace-nowrap'}>
+                                {/*<p className={''}>*/}
+                                {/*    Страховочный пакет от 1 199 000 руб**/}
+                                {/*</p>*/}
+                                <p className={'animate-pulse'}>
+                                    Страховочный пакет от 1 199 000 руб*
+                                </p>
+                                <p className={'animate-pulse hidden lg:flex'}>
+                                    Страховочный пакет от 1 199 000 руб*
+                                </p>                        {/*<div>*/}
+                            </div>
+                        </div>
                         <div className={'w-full mx-auto px-8 h-full flex flex-col justify-center gap-4 max-w-7xl'}>
                             <h1 className={'text-white text-3xl lg:text-5xl font-bold'}>
                                 Рельсовые<br/>страховочные пакеты<br/> для железных дорог
@@ -24,14 +37,12 @@ const Page = async() => {
                                 С 2019 года наша компания производит, устанавливает<br/> и предоставляет в аренду
                                 рельсовые страховочные пакеты
                             </p>
-                            <p className={'text-white text-xl font-bold'}>
-                                Страховочный пакет от 1 199 000 руб*
-                            </p>
                             <p className={'text-white text-xl font-light flex gap-2 items-center justify-center lg:justify-start'}>
                                 <hr className={'w-8 h-[4px] bg-primary rounded border-0'}/>
                                 Работаем по всей России
                                 <hr className={'w-8 h-[4px] lg:hidden bg-primary rounded border-0'}/>
-                            </p>jj
+                            </p>
+                            jj
                             {/*<OrderService/>*/}
                             <OrderServiceModal/>
                         </div>
@@ -40,7 +51,7 @@ const Page = async() => {
                 </div>
                 <div
                     className={'w-full mx-auto flex flex-col items-center justify-center max-w-7xl px-2 lg:px-8 gap-4'}>
-                    <div
+                <div
                         className={'w-full h-full grid grid-cols-1 lg:grid-cols-2 items-center justify-between gap-4'}>
                         {/*<div>*/}
                         {/*<div className={'items-center justify-center flex'}>*/}
