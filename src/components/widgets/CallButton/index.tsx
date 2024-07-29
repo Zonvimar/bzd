@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const CallButton = () => {
     return (
-        <Link href={"tel:+79265631107"}>
+        <Link href={"tel:+79015531520"}>
             <Button variant="bordered" isIconOnly>
                 <Phone strokeWidth={1.25} width={20}/>
             </Button>

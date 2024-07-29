@@ -26,18 +26,18 @@ const OrderServiceModal = ({defaultValue}: {defaultValue?: 'turnKey' | 'rent' | 
     const services = [
         {key: "turnKey", label: "Под ключ"},
         {key: "rent", label: "Аренда"},
-        {key: "buy", label: "Покупка"},
-        {key: "install", label: "Установка"},
+        // {key: "buy", label: "Покупка"},
+        // {key: "install", label: "Установка"},
     ];
     const lengths = [
         {key: "12,5", label: "12,5 метров"},
         {key: "25", label: "25 метров"},
     ];
-
-    const waysGetting = [
-        {key: "delivery", label: "Доставка"},
-        {key: "pickup", label: "Самовывоз"},
-    ]
+    //
+    // const waysGetting = [
+    //     {key: "delivery", label: "Доставка"},
+    //     {key: "pickup", label: "Самовывоз"},
+    // ]
 
     return (
         <>
@@ -88,22 +88,22 @@ const OrderServiceModal = ({defaultValue}: {defaultValue?: 'turnKey' | 'rent' | 
                                         ))}
                                     </Select>
                                     {/*<TextField label={'Необходимое количество пакетов'} name={'count'} variant={'faded'} required isRequired/>*/}
-                                    {service === 'rent' || service === 'buy' &&
-                                        <Select
-                                            label="Способ получения"
-                                            placeholder="Выберите способ"
-                                            name={'wayGetting'}
-                                            defaultSelectedKeys={['delivery']}
-                                            isRequired
-                                            variant={'faded'}
-                                        >
-                                            {waysGetting.map((way) => (
-                                                <SelectItem key={way.key}>
-                                                    {way.label}
-                                                </SelectItem>
-                                            ))}
-                                        </Select>
-                                    }
+                                    {/*{service === 'rent' || service === 'buy' &&*/}
+                                    {/*    <Select*/}
+                                    {/*        label="Способ получения"*/}
+                                    {/*        placeholder="Выберите способ"*/}
+                                    {/*        name={'wayGetting'}*/}
+                                    {/*        defaultSelectedKeys={['delivery']}*/}
+                                    {/*        isRequired*/}
+                                    {/*        variant={'faded'}*/}
+                                    {/*    >*/}
+                                    {/*        {waysGetting.map((way) => (*/}
+                                    {/*            <SelectItem key={way.key}>*/}
+                                    {/*                {way.label}*/}
+                                    {/*            </SelectItem>*/}
+                                    {/*        ))}*/}
+                                    {/*    </Select>*/}
+                                    {/*}*/}
                                     <Input label={'Необходимое количество пакетов'} name={'count'} variant={'bordered'} required isRequired/>
                                     {service === 'rent' && <Input label={'Срок аренды'} name={'rent'} variant={'bordered'} required isRequired/>}
                                     {/*<TextField label={'Место установки'} variant={'faded'} required isRequired/>*/}
