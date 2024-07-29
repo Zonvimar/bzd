@@ -21,9 +21,9 @@ const CooperationOptions = () => {
                     {/*    /!*<div>*!/*/}
                     {/*    /!*</div>*!/*/}
                     {/*</CardHeader>*/}
-                    <CardBody className="overflow-hidden max-h-[382px] py-2 px-2 flex flex-col justify-between gap-4">
+                    <CardBody className="overflow-hidden max-h-[382px] py-2 px-4 flex flex-col justify-between gap-4">
                         <p className={'font-bold text-xl'}>Работа "Под ключ"</p>
-                        <p>Аренда, эксплуатация, установка, а так же разработка и согласование документации включены в стоимость.</p>
+                        <p>Разработка и согласование ППР, получение акта допуска, монтаж/демонтаж РСП, эксплуатация, установка, а так же разработка и согласование документации включены в стоимость.</p>
                         <Link href={'/services/turnkey/'} className={'text-primary'}>
                             <Button className={'w-fit px-8'} variant={'ghost'} color={'primary'}>Подробнее</Button>
                         </Link>
@@ -49,9 +49,11 @@ const CooperationOptions = () => {
                     {/*    /!*<div>*!/*/}
                     {/*    /!*</div>*!/*/}
                     {/*</CardHeader>*/}
-                    <CardBody className="overflow-hidden max-h-[382px] py-2 px-2 flex flex-col justify-between gap-4">
-                        <p className={'font-bold text-xl'}>Взять в аренду</p>
-                        <p>Срок аренды до 30 календарных дней.</p>
+                    <CardBody className="overflow-hidden max-h-[382px] py-2 px-4 flex flex-col justify-between gap-4">
+                        <div className={'flex flex-col gap-2'}>
+                            <p className={'font-bold text-xl'}>Взять в аренду</p>
+                            <p className={'pt-2'}>Если у вас есть аттестованный персонал, мы готовы предоставить нашу конструкцию в аренду.</p>
+                        </div>
                         <Link href={'/services/rent/'} className={'text-primary'}>
                             <Button className={'w-fit px-8'} variant={'ghost'} color={'primary'}>Подробнее</Button>
                         </Link>

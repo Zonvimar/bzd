@@ -4,6 +4,8 @@ import PackingOfSafetyBags from "@/components/widgets/PackingOfSafetyBags";
 import AdditionalServices from "@/components/widgets/AdditionalServices";
 import PickupConditions from "@/components/widgets/PickupConditions";
 import TableDeadlines from "@/components/widgets/TableDeadlines";
+import Costs from "@/components/widgets/Costs";
+
 
 const Page = async() => {
 
@@ -26,7 +28,9 @@ const Page = async() => {
                                             'это выполнение всех необходимых мероприятий для получения акта-допуска' +
                                             ' от РЖД на выполнение прокола под железной дорогой.'}
                     />
-                    <PickupConditions defaultValue={'turnKey'}/>
+                    {/*<PickupConditions defaultValue={'turnKey'}/>*/}
+                    <Costs/>
+                    {/*<PackingOfSafetyBags/>*/}
                     <TableDeadlines/>
                 </div>
             </div>
