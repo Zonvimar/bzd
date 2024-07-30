@@ -106,20 +106,20 @@ const Costs = () => {
                                     <TableRow key="8">
                                         <TableCell>Обслуживание пакета 12,5м в месяц</TableCell>
                                         <TableCell>60 000</TableCell>
-                                        <TableCell>С второго месяца смонтррованного пакета</TableCell>
+                                        <TableCell>С второго месяца смонтированного пакета</TableCell>
                                     </TableRow>
                                     <TableRow key="9">
                                         <TableCell>Обслуживание пакета 25м в месяц</TableCell>
                                         <TableCell>90 000</TableCell>
-                                        <TableCell>С второго месяца смонтррованного пакета</TableCell>
+                                        <TableCell>С второго месяца смонтированного пакета</TableCell>
                                     </TableRow>
                                     <TableRow key="10">
-                                        <TableCell>Помощь в согл. Договора на ОКНА</TableCell>
+                                        <TableCell>Согласование договора на ОКНА</TableCell>
                                         <TableCell>60 000</TableCell>
                                         <TableCell>Сторонним организациям для их видов работ</TableCell>
                                     </TableRow>
                                     <TableRow key="11">
-                                        <TableCell>Помощь в согл. Договора на технадзор</TableCell>
+                                        <TableCell>Согласнование договора на технадзор</TableCell>
                                         <TableCell>60 000</TableCell>
                                         <TableCell>Сторонним организациям для их видов работ</TableCell>
                                     </TableRow>

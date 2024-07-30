@@ -3,6 +3,7 @@ import {Button, Divider, Image} from "@nextui-org/react";
 import CooperationOptionsVersion2 from "@/components/widgets/CooperationOptionsVersion2";
 import {Check} from "lucide-react";
 import {Card, CardBody} from "@nextui-org/card";
+import BaseCarouselImages from "@/components/widgets/BaseCarousel";
 
 const Page = async() => {
 
@@ -41,24 +42,35 @@ const Page = async() => {
                         </p>
                     </div>
                     {/*<div className={'grid grid-cols-1 gap-6 justify-between'}>*/}
-                        <div className={'grid grid-cols-1 justify-center h-fit gap-3 lg:mx-auto items-start'}>
-                            <p className={'font-bold'}><span className={'text-primary text-2xl'}>Более 1500 страховочных
+                    <div className={'grid grid-cols-1 justify-center h-fit gap-3 lg:mx-auto items-start'}>
+                        <p className={'font-bold'}><span className={'text-primary text-2xl'}>Более 1500 страховочных
                                 пакетов</span></p>
-                            <p className={'font-bold'}>Установлено по всей России</p>
-                        </div>
-                        {/*<div className={'flex flex-col gap-3'}>*/}
-                        {/*    <p className={'font-bold'}><span className={'text-primary text-2xl'}>45+</span><br/>страховочных*/}
-                        {/*        пакетов</p>*/}
-                        {/*    <p>Изготовлено</p>*/}
-                        {/*</div>*/}
+                        <p className={'font-bold'}>Установлено по всей России</p>
+                    </div>
+                    {/*<div className={'flex flex-col gap-3'}>*/}
+                    {/*    <p className={'font-bold'}><span className={'text-primary text-2xl'}>45+</span><br/>страховочных*/}
+                    {/*        пакетов</p>*/}
+                    {/*    <p>Изготовлено</p>*/}
+                    {/*</div>*/}
                     {/*</div>*/}
                 </div>
                 <CooperationOptionsVersion2/>
                 <div className={'w-full h-full flex flex-col text-start gap-8'}>
                     <div className={'flex flex-col gap-2'}>
+                        <h2 className={'text-3xl font-bold'}>Фотографии нашей базы</h2>
+                        {/*<p className={''}>*/}
+                        {/*    Сертифицированная продукция и высококвалифицированные специалисты, соответствующие*/}
+                        {/*    стандартам и требованиям.*/}
+                        {/*</p>*/}
+                    </div>
+                    <BaseCarouselImages/>
+                </div>
+                <div className={'w-full h-full flex flex-col text-start gap-8'}>
+                    <div className={'flex flex-col gap-2'}>
                         <h2 className={'text-3xl font-bold'}>Наши преимущества</h2>
                         <p className={''}>
-                            Сертифицированная продукция и высококвалифицированные специалисты, соответствующие стандартам и требованиям.
+                            Сертифицированная продукция и высококвалифицированные специалисты, соответствующие
+                            стандартам и требованиям.
                         </p>
                     </div>
                     <div className={'grid grid-cols-1 lg:grid-cols-2 w-full gap-6'}>

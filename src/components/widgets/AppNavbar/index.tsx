@@ -91,10 +91,10 @@ const AppNavbar = () => {
                             </Link>
                         </NavbarMenuItem>
                         {/*<NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)}*/}
-                        {/*                isActive={pathname.includes('/services/buy')}>*/}
-                        {/*    <Link href={'/services/buy'}*/}
+                        {/*                isActive={pathname.includes('/services/monitoring')}>*/}
+                        {/*    <Link href={'/services/monitoring'}*/}
                         {/*          className={`transition-background items-center flex rounded-md justify-between `}>*/}
-                        {/*        Покупка*/}
+                        {/*        Мониторинг*/}
                         {/*    </Link>*/}
                         {/*</NavbarMenuItem>*/}
                         {/*<NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)}*/}
@@ -159,11 +159,11 @@ const AppNavbar = () => {
                             Аренда
                         </DropdownItem>
                         {/*<DropdownItem*/}
-                        {/*    key="buy"*/}
-                        {/*    href={'/services/buy/'}*/}
-                        {/*    className={`${pathname.includes('/services/buy') ? 'bg-primary text-white' : ''}`}*/}
+                        {/*    key="monitoring"*/}
+                        {/*    href={'/services/monitoring/'}*/}
+                        {/*    className={`${pathname.includes('/services/monitoring') ? 'bg-primary text-white' : ''}`}*/}
                         {/*>*/}
-                        {/*    Покупка*/}
+                        {/*    Мониторинг*/}
                         {/*</DropdownItem>*/}
                         {/*<DropdownItem*/}
                         {/*    key="installation"*/}

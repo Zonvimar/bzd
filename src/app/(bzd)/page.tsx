@@ -18,15 +18,12 @@ const Page = async() => {
                         className={'w-full bg-black/70 h-full'}>
                         <div className={'bg-primary relative overflow-x-hidden'}>
                             <div className={'text-white text-xl font-bold bg-primary flex items-center justify-between animate-marquee lg:animate-marquee2 whitespace-nowrap'}>
-                                {/*<p className={''}>*/}
-                                {/*    Страховочный пакет от 1 199 000 руб**/}
-                                {/*</p>*/}
                                 <p className={'animate-pulse'}>
                                     Страховочный пакет 1 199 000 руб*
                                 </p>
                                 <p className={'animate-pulse hidden lg:flex'}>
                                     Страховочный пакет 1 199 000 руб*
-                                </p>                        {/*<div>*/}
+                                </p>
                             </div>
                         </div>
                         <div className={'w-full mx-auto px-8 h-full flex flex-col justify-center gap-4 max-w-7xl'}>
@@ -42,33 +39,21 @@ const Page = async() => {
                                 Работаем по всей России
                                 <hr className={'w-8 h-[4px] lg:hidden bg-primary rounded border-0'}/>
                             </p>
-                            jj
-                            {/*<OrderService/>*/}
                             <OrderServiceModal/>
                         </div>
-                        {/*</div>*/}
                     </div>
                 </div>
                 <div
                     className={'w-full mx-auto flex flex-col items-center justify-center max-w-7xl px-2 lg:px-8 gap-4'}>
                 <div
                         className={'w-full h-full grid grid-cols-1 lg:grid-cols-2 items-center justify-between gap-4'}>
-                        {/*<div>*/}
-                        {/*<div className={'items-center justify-center flex'}>*/}
                         <Image
                             width={'100%'}
                             height={'70%'}
                             alt="NextUI hero Image"
                             src="/people-zd.jpg"
                         />
-                        {/*</div>*/}
-
-                        {/*<p className={''}>*/}
-                        {/*    ФОТКИ*/}
-                        {/*</p>*/}
                         <div className={'flex flex-col justify-between h-full gap-3'}>
-                            {/*<div className={'flex flex-col gap-4'}>*/}
-                            {/*<div className={'flex flex-col gap-4'}>*/}
                                 <h2 className={'text-3xl font-bold'}>
                                     О нас
                                 </h2>
@@ -87,21 +72,13 @@ const Page = async() => {
                                     Наша материальная база позволяет выполнять даже самые крупные заказы,
                                     так как в наличии имеется более 50 комплектов страховочных пакетов.
                                 </p>
-                            {/*</div>*/}
-                            {/*<p>*/}
-                            {/*    Стоимость установки страховочного рельсового пакета зависит от даты*/}
-                            {/*    проведения работ и местоположения объекта.*/}
-                            {/*</p>*/}
-                            {/*</div>*/}
                             <Link href={'/projects'} className={'text-primary'}>
                                 <Button color={'primary'} variant={'ghost'} size={'lg'} className={'px-8 w-fit'}>
                                     Выполненные
                                     работы</Button>
                             </Link>
                         </div>
-                        {/*</div>*/}
                     </div>
-                    {/*////*/}
                     <PackingOfSafetyBags/>
                     <CooperationOptions/>
                     <Equipment/>
