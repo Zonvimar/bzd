@@ -1,6 +1,7 @@
 import {sendEmail} from "@/utils/mail.utils";
+import {NextRequest} from "next/server";
 
-export async function POST(request) {
+export async function POST(request: NextRequest) {
     const fd = await request.formData()
     const subject = fd.get('service') === 'turnKey' ? 'Заказ под ключ' : 'Заказ аренды'
     // const email = 'zonvimar@yandex.ru'
