@@ -4,6 +4,7 @@ import CooperationOptionsVersion2 from "@/components/widgets/CooperationOptionsV
 import {Check} from "lucide-react";
 import {Card, CardBody} from "@nextui-org/card";
 import BaseCarouselImages from "@/components/widgets/BaseCarousel";
+import PickUsYouHave from "@/components/widgets/PickUsYouHave";
 
 const Page = async() => {
 
@@ -64,6 +65,7 @@ const Page = async() => {
                         {/*</p>*/}
                     </div>
                     <BaseCarouselImages/>
+                    <PickUsYouHave/>
                 </div>
                 <div className={'w-full h-full flex flex-col text-start gap-8'}>
                     <div className={'flex flex-col gap-2'}>
@@ -168,7 +170,7 @@ const Page = async() => {
                                     width={'100%'}
                                     height={'100%'}
                                     alt="NextUI hero Image"
-                                    src="/logo-aodim.svg"
+                                    src="/aodim.png"
                                     radius={'none'}
                                 />
                             </div>
