@@ -63,7 +63,7 @@ const Costs = () => {
 
                             >
                                 <TableHeader className={'bg-primary'}>
-                                    <TableColumn className={''} align={'start'} maxWidth={100} minWidth={50}>Длина РСП в метрах/виды работ</TableColumn>
+                                    <TableColumn className={''} align={'center'} maxWidth={100} minWidth={50}>Длина РСП в метрах/виды работ</TableColumn>
                                     <TableColumn className={''} align={'center'} maxWidth={100} minWidth={100}>Цена за ед.руб. с НДС</TableColumn>
                                     <TableColumn className={''} align={'start'} maxWidth={100} minWidth={100}>Примечание</TableColumn>
                                 </TableHeader>
@@ -134,7 +134,7 @@ const Costs = () => {
                                         <TableCell>Расчет согласно проектной документации</TableCell>
                                     </TableRow>
                                     <TableRow key="14">
-                                        <TableCell><span className={'text-red-500 font-bold text-xl'}>*</span>ППР/АКТ ДОПУСКА/МОНТАЖ/ДЕМОНТАЖ</TableCell>
+                                        <TableCell><span className={'text-red-500 font-bold text-xl'}>*</span>ППР/АКТ ДОПУСКА/ТЕХ. НАДЗОР/<br/>СОГЛАСОВАНИЕ "ОКОН"/МОНТАЖ/ДЕМОНТАЖ</TableCell>
                                         <TableCell>-</TableCell>
                                         <TableCell>Входит в комплекс работ</TableCell>
                                     </TableRow>

@@ -14,190 +14,190 @@ const TableDeadlines = () => {
                     Срок выполнения 35 дней*
                 </p>
             </div>
-            <table className="w-full">
-                <thead className={'py-2 border-b border-black/40'}>
+            <table className="w-full text-primary-foreground">
+                <thead className={'py-2'}>
                 <tr>
-                    <td className="border border-black/40 w-[20px] fw-medium bg-primary bg-opacity-40 px-2 py-3">Задача</td>
-                    <td className="border border-black/40 w-[20px] fw-medium text-center bg-primary bg-opacity-40 px-6 py-3"
+                    <td className=" w-[20px] fw-medium bg-primary px-2 py-3">Задача</td>
+                    <td className="border-r border-black/20 w-[20px] fw-medium text-center bg-primary px-6 py-3"
                         colSpan={70}>Сроки выполнения работ
                     </td>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td className="border-x border-b border-black/40 bg-primary bg-opacity-30 px-4 py-2">1. Подписание
+                    <td className="border-none shadow-sm bg-primary opacity-80 px-4 py-2">1. Подписание
                         договора
                     </td>
                     <td className="text-center bg-primary text-white">1</td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
                 </tr>
                 <tr>
-                    <td className="border-x border-b border-black/40 bg-primary bg-opacity-30 px-4 py-2">2. Разработка
+                    <td className="border-none bg-primary opacity-80 px-4 py-2">2. Разработка
                         ППР на страхпакет
                     </td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
                     <td className="text-center bg-primary text-white" colSpan={3}>3 дня*</td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
                 </tr>
                 <tr>
-                    <td className="border-x border-b border-black/40 bg-primary bg-opacity-30 px-4 py-2">
+                    <td className="border-none shadow-md bg-primary opacity-80 px-4 py-2">
                         3. Инструментальная проверка коммуникаций,
                         Согласование ППР на страхпакет,
                         Договор на технадзор
                     </td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
                     <td className="text-center bg-primary text-white" rowSpan={4} colSpan={10} data-bs-toggle="tooltip"
                         data-bs-placement="bottom"
                         data-bs-title="Проверка наличия инженерных коммуникаций, установка временных знаков в местах их расположения в зоне производства работ. Разработка мероприятий по обеспечению сохранности инженерных и кабельных коммуникаций.">23
                         дня*
                     </td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
                 </tr>
                 <tr>
-                    <td className="border-x border-b border-black/40 bg-primary bg-opacity-15 px-6 py-2">3.1. Создание
+                    <td className="border-none bg-primary opacity-60 px-6 py-2">3.1. Создание
                         комиссии по инструментальной проверке
                     </td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
                 </tr>
                 <tr>
-                    <td className="border-x border-b border-black/40 bg-primary bg-opacity-15 px-6 py-2">3.2.
+                    <td className="border-none bg-primary opacity-60 px-6 py-2">3.2.
                         Комиссионный осмотр места работ
                     </td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
                 </tr>
                 <tr>
-                    <td className="border-x border-b border-black/40 bg-primary bg-opacity-15 px-6 py-2">3.3 Получение в
+                    <td className="border-none bg-primary opacity-60 px-6 py-2">3.2.
                         подразделениях ОАО РЖД документов
                     </td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
                 </tr>
                 <tr>
-                    <td className="border-x border-b border-black/40 bg-primary bg-opacity-30 px-4 py-2">4. Получение
+                    <td className="border-none shadow-sm bg-primary opacity-80 px-4 py-2">4. Получение
                         акта-допуска
                     </td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
                     <td className="text-center bg-primary text-white" colSpan={5} data-bs-toggle="tooltip">5 дней*</td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
                 </tr>
                 <tr>
-                    <td className="border-x border-b border-black/40 bg-primary bg-opacity-30 px-4 py-2">5. Установка
+                    <td className="border-b border-black/20 shadow-sm bg-primary opacity-80 px-4 py-2">5. Установка
                         страхпакета
                     </td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className={'border border-black/40 w-[20px]'}></td>
-                    <td className="border-b border-r border-black/40 text-center bg-primary text-white" colSpan={3}>3
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className="border-b border-r border-black/20 text-center bg-primary text-white" colSpan={3}>3
                         дня*
                     </td>
 
@@ -246,14 +246,14 @@ const TableDeadlines = () => {
                 {/*    /!*    <td></td>*!/*/}
                 {/*    /!*    <td></td>*!/*/}
                 {/*    /!*    <td></td>*!/*/}
-                {/*    /!*    <td className="border-black/40 border text-center" colSpan="3" data-bs-toggle="tooltip"*!/*/}
+                {/*    /!*    <td className="border-black/20 border text-center" colSpan="3" data-bs-toggle="tooltip"*!/*/}
                 {/*    /!*        data-bs-placement="bottom"*!/*/}
                 {/*    /!*        data-bs-title="Производится очистка рельсошпальных ящиков от щебня. В каждый рельсошпальный ящик прикрепляется полушпалок на подошву путевого рельса. С каждой стороны путевого рельса на полушпалки укладывается пакет, состоящий из трех рельс. Каждый пакет крепится к полушпалкам хомутами. На каждый пакет прикрепляется щитки с маркировкой, улучшающий визуальную видимость страховочного пакета.">3*!/*/}
                 {/*    /!*        дня**!/*/}
                 {/*    /!*    </td>*!/*/}
                 {/*    /!*</tr>*!/*/}
                 {/*    /!*<tr>*!/*/}
-                {/*    /!*    <td className="fw-medium bg-primary bg-opacity-20">Итого длительность установки:</td>*!/*/}
+                {/*    /!*    <td className="fw-medium bgbg-primary bg-opacity-20">Итого длительность установки:</td>*!/*/}
                 {/*    /!*    <td className="text-center text-light bg-primary" colSpan="45">45 дней*</td>*!/*/}
                 {/*    /!*</tr>*!/*/}
                 </tbody>
