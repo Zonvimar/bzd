@@ -148,6 +148,27 @@ const Page = async() => {
                                     radius={'none'}
                                 />
                             </div>
+                            <div className={'hidden lg:flex'}></div>
+                            <div className={'hidden lg:flex'}></div>
+                            {/*<div></div> */}
+                            <div className={'flex gap-2 py-4 items-center justify-center w-full'}>
+                                <Image
+                                    width={'100%'}
+                                    height={'100%'}
+                                    alt="NextUI hero Image"
+                                    src="/logo-aodim.svg"
+                                    radius={'none'}
+                                />
+                            </div>
+                            <div className={'flex gap-2 py-4 items-center justify-center w-full'}>
+                                <Image
+                                    width={'100%'}
+                                    height={'100%'}
+                                    alt="NextUI hero Image"
+                                    src="/misk.png"
+                                    radius={'none'}
+                                />
+                            </div>
                         </CardBody>
                     </Card>
 
