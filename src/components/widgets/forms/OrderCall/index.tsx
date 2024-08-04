@@ -13,13 +13,23 @@ import React, {useState} from "react";
 const OrderServiceModal = ({defaultValue}: {defaultValue?: 'turnKey' | 'rent' | 'buy' | 'install'}) => {
     const [open, setOpen] = useState(false)
 
-    const handleSubmit = (formData: FormData) => {
-        // for (const [key, value] of formData.entries()) {
-        //     console.log(key, value);
-        // }
-        setOpen(false)
-        // onOpenChange(false)
-    }
+
+    async function handleSubmit(fd: FormData) {
+        const res = await fetch('/api/order_call', {
+            method: 'POST',
+            body: fd,
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data)
+                setOpen(false)
+            })
+            .catch(error => {
+                console.log(error)
+                setOpen(false)
+            });
+    };
+
 
     return (
         <>
@@ -41,8 +51,8 @@ const OrderServiceModal = ({defaultValue}: {defaultValue?: 'turnKey' | 'rent' | 
                                       onClick={(e) => e.stopPropagation()}
                                       className={'flex flex-col gap-4'}
                                 >
-                                    <Input label={'Ваше имя'} variant={'bordered'} required isRequired/>
-                                    <Input label={'Номер телефона'} variant={'bordered'} required isRequired/>
+                                    <Input label={'Ваше имя'} name={'name'} variant={'bordered'} required isRequired/>
+                                    <Input label={'Номер телефона'} name={'phone'} variant={'bordered'} required isRequired/>
                                     {/*<Input label={'Электронная почта'} variant={'faded'} isRequired/>*/}
                                     {/*<Textarea label={'Ваш вопрос'} variant={'faded'} isRequired/>*/}
                                     {/*<Button className={'w-full px-8'} color={'primary'}*/}

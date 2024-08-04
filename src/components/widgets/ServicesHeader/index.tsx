@@ -2,7 +2,8 @@ import React from "react";
 import OrderServiceModal from "@/components/widgets/forms/OrderServiceModal";
 
 
-const ServicesHeader = ({title, description, defaultValue}: {title: string, description: string, defaultValue: 'turnKey' | 'rent' | 'buy' | 'install'}) => {
+const ServicesHeader = ({title, description, defaultValue, withModal = true}:
+                            {title: string, description: string, defaultValue?: 'turnKey' | 'rent', withModal?: boolean}) => {
 
     return (
         <div className={'flex flex-col gap-6'}>
@@ -15,7 +16,7 @@ const ServicesHeader = ({title, description, defaultValue}: {title: string, desc
                         <p className={'text-white text-xl font-light'}>
                             {description}
                         </p>
-                        <OrderServiceModal defaultValue={defaultValue}/>
+                        {withModal && <OrderServiceModal defaultValue={defaultValue}/>}
                     </div>
                 </div>
             </div>

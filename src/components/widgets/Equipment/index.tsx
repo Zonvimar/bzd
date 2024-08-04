@@ -14,7 +14,7 @@ const Equipment = () => {
                     Специальное оборудование для погрузки, доставки и установки страховочных пакетов.
                 </p>
             </div>
-            <div className={'grid grid-cols-1 gap-6 px-2'}>
+            <div className={'grid grid-cols-1 gap-6'}>
                 <Card className={"w-full hover:shadow-2xl transition-shadow"}>
                     <CardBody className="overflow-hidden grid grid-cols-1 lg:grid-cols-2 justify-between gap-4">
                         <Image

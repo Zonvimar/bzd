@@ -22,21 +22,21 @@ const Footer = () => {
                 </div>
 
                 {/*<p>+7 (926) 563-11-07</p>*/}
-                <div className={'flex flex-col gap-1.5 items-start justify-center'}>
+                <div className={'flex flex-col gap-1.5 items-center justify-center'}>
                     <p className={'font-bold text-xl w-full text-center'}>Контакты</p>
                     <Chip color={'primary'} size={'lg'}>
-                        <a href="tel:+74951390095" className={'w-fit flex gap-2 items-center'}>
+                        <a href="tel:+74951390095" className={'flex gap-2 items-center'}>
                             <Phone/>+7 (495) 139-00-95
                         </a>
                     </Chip>
                     <Chip color={'primary'} size={'lg'}>
-                        <a href="tel:+79265631107" className={'w-fit flex gap-2 items-center'}>
-                            <Phone/>+7 (926) 563-11-07
+                        <a href="tel:+79015531520" className={'flex gap-2 items-center'}>
+                            <Phone/>+7 (901) 553-15-20
                         </a>
                     </Chip>
                     <Chip color={'primary'} size={'lg'}>
-                        <a href="mailto:rzd.bzd@gmail.com" className={'w-fit flex gap-2 items-center'}>
-                            <Mail/>rzd.bzd@gmail.com
+                        <a href="mailto:info@bzdgroup.ru" className={'flex gap-2 items-center'}>
+                            <Mail/>info@bzdgroup.ru
                         </a>
                     </Chip>
                 </div>

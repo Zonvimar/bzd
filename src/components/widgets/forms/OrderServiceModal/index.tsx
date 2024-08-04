@@ -11,33 +11,35 @@ import React, {useState} from "react";
 import {Select, SelectItem} from "@nextui-org/react";
 
 
-const OrderServiceModal = ({defaultValue}: {defaultValue?: 'turnKey' | 'rent' | 'buy' | 'install'}) => {
+const OrderServiceModal = ({defaultValue}: {defaultValue?: 'turnKey' | 'rent'}) => {
     const [open, setOpen] = useState(false)
     const [service, setService] = useState<string | undefined>(defaultValue)
 
-    const handleSubmit = (formData: FormData) => {
-        // for (const [key, value] of formData.entries()) {
-        //     console.log(key, value);
-        // }
-        setOpen(false)
-        // onOpenChange(false)
-    }
+    async function handleSubmit(fd: FormData) {
+        const res = await fetch('/api/emails', {
+            method: 'POST',
+            body: fd,
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data)
+                setOpen(false)
+            })
+            .catch(error => {
+                console.log(error)
+                setOpen(false)
+            });
+    };
+
 
     const services = [
         {key: "turnKey", label: "Под ключ"},
         {key: "rent", label: "Аренда"},
-        {key: "buy", label: "Покупка"},
-        {key: "install", label: "Установка"},
     ];
     const lengths = [
         {key: "12,5", label: "12,5 метров"},
         {key: "25", label: "25 метров"},
     ];
-
-    const waysGetting = [
-        {key: "delivery", label: "Доставка"},
-        {key: "pickup", label: "Самовывоз"},
-    ]
 
     return (
         <>
@@ -88,22 +90,22 @@ const OrderServiceModal = ({defaultValue}: {defaultValue?: 'turnKey' | 'rent' | 
                                         ))}
                                     </Select>
                                     {/*<TextField label={'Необходимое количество пакетов'} name={'count'} variant={'faded'} required isRequired/>*/}
-                                    {service === 'rent' || service === 'buy' &&
-                                        <Select
-                                            label="Способ получения"
-                                            placeholder="Выберите способ"
-                                            name={'wayGetting'}
-                                            defaultSelectedKeys={['delivery']}
-                                            isRequired
-                                            variant={'faded'}
-                                        >
-                                            {waysGetting.map((way) => (
-                                                <SelectItem key={way.key}>
-                                                    {way.label}
-                                                </SelectItem>
-                                            ))}
-                                        </Select>
-                                    }
+                                    {/*{service === 'rent' || service === 'buy' &&*/}
+                                    {/*    <Select*/}
+                                    {/*        label="Способ получения"*/}
+                                    {/*        placeholder="Выберите способ"*/}
+                                    {/*        name={'wayGetting'}*/}
+                                    {/*        defaultSelectedKeys={['delivery']}*/}
+                                    {/*        isRequired*/}
+                                    {/*        variant={'faded'}*/}
+                                    {/*    >*/}
+                                    {/*        {waysGetting.map((way) => (*/}
+                                    {/*            <SelectItem key={way.key}>*/}
+                                    {/*                {way.label}*/}
+                                    {/*            </SelectItem>*/}
+                                    {/*        ))}*/}
+                                    {/*    </Select>*/}
+                                    {/*}*/}
                                     <Input label={'Необходимое количество пакетов'} name={'count'} variant={'bordered'} required isRequired/>
                                     {service === 'rent' && <Input label={'Срок аренды'} name={'rent'} variant={'bordered'} required isRequired/>}
                                     {/*<TextField label={'Место установки'} variant={'faded'} required isRequired/>*/}

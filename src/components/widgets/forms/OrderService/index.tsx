@@ -104,15 +104,6 @@ const OrderService = ({defaultValue}: {defaultValue?: 'turnKey' | 'rent' | 'buy'
                 <Button className={'w-full px-8'} color={'primary'} type={'submit'}>Отправить заявку</Button>
             </form>
         </ModalComponent>
-        // <Button
-        //     variant="bordered" isIconOnly
-        //     href={"tel:+79265631107"}
-        // >
-        //     <Phone strokeWidth={1.25} width={20}/>
-        //     {/*<a href="tel:+79265631107" className={'w-fit flex gap-2 items-center'}>*/}
-        //     {/*    <Phone/>+7 (926) 563-11-07*/}
-        //     {/*</a>*/}
-        // </Button>
     )
 }
 

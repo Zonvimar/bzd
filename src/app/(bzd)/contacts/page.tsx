@@ -24,8 +24,8 @@ const Page = async() => {
                                 <a href="tel:+74951390095" className={'w-fit flex gap-2 items-center'}>
                                     <Phone className={'text-primary'}/>+7 (495) 139-00-95
                                 </a>
-                                <a href="tel:+79265631107" className={'w-fit flex gap-2 items-center'}>
-                                    <Phone className={'text-primary'}/>+7 (926) 563-11-07
+                                <a href="tel:+79015531520" className={'w-fit flex gap-2 items-center'}>
+                                    <Phone className={'text-primary'}/>+7 (901) 553-15-20
                                 </a>
                             </div>
 
@@ -36,8 +36,8 @@ const Page = async() => {
                         <div className={'flex flex-col gap-4'}>
                                 <p className={'font-bold text-xl'}>Электронная почта</p>
                             <div className={'h-full w-full flex flex-col gap-2 justify-start pt-2'}>
-                                <a href="mailto:rzd.bzd@gmail.com" className={'w-fit flex gap-2 items-center'}>
-                                    <Mail className={'text-primary'}/>rzd.bzd@gmail.com
+                                <a href="mailto:info@bzdgroup.ru" className={'w-fit flex gap-2 items-center'}>
+                                    <Mail className={'text-primary'}/>info@bzdgroup.ru
                                 </a>
                             </div>
                         </div>

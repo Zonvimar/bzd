@@ -15,7 +15,7 @@ const Page = async() => {
                 'страховочных\n' +
                 'рельсовых пакетов'} description={'Цена установки составляет 802 130 RUB с НДС.\n' +
                 '\n'}
-                            defaultValue={'install'}
+                            // defaultValue={'install'}
             />
             <div className={'flex flex-col gap-6 pt-6'}>
                 <div
