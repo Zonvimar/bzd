@@ -17,9 +17,9 @@ const PackingInfo = () => {
                             height={'100%'}
                         />
                         <div className={'flex flex-col gap-4 justify-center'}>
-                            <p className={'font-bold text-xl'}>Полушпала ПШ состоит из:</p>
+                            <p className={'font-bold text-xl'}>Полушпала</p>
                             <p>
-                                Балка Б5 - 1шт., блок ребер жесткости - 6шт.,
+                                Состоит из: балка Б5 - 1шт., блок ребер жесткости - 6шт.,
                                 подкладка КД-65 - 1шт., болт м24х80 с плоской шайбой м24 и гайкой м24 - 4шт.,
                                 болт м22х70 с двумя плоскими шайбами м22 и гайкой м22) - прикрепляется между шпальными
                                 ящиками к рельсу существующего пути при помощи клеммных болтов.
@@ -37,7 +37,7 @@ const PackingInfo = () => {
                             height={'100%'}
                         />
                         <div className={'flex flex-col gap-4 justify-center lg:order-first order-last'}>
-                            <p className={'font-bold text-xl'}>Хомут Х</p>
+                            <p className={'font-bold text-xl'}>Хомут</p>
                             <p>
                                 Под рельсы типа Р-65 либо рельсы типа Р-50 - служит для закрепления
                                 пакетных рельс к полушпалам.
