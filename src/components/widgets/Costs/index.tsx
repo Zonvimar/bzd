@@ -136,7 +136,7 @@ const Costs = () => {
                                     <TableRow key="14">
                                         <TableCell><span className={'text-red-500 font-bold text-xl'}>*</span>ППР/АКТ ДОПУСКА/ТЕХ. НАДЗОР/<br/>СОГЛАСОВАНИЕ "ОКОН"/МОНТАЖ/ДЕМОНТАЖ</TableCell>
                                         <TableCell>-</TableCell>
-                                        <TableCell>Входит в комплекс работ</TableCell>
+                                        <TableCell width={500}>Входит в комплекс работ. Официальные платежи в ОАО «РЖД» на осуществление тех. надзора и «ОКОН» оплачиваются заказчиком</TableCell>
                                     </TableRow>
                                 </TableBody>
                             </Table>

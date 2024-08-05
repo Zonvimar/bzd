@@ -118,6 +118,12 @@ const AppNavbar = () => {
                         О нас
                     </Link>
                 </NavbarMenuItem>
+                <NavbarMenuItem className={'px-2'}  onClick={() => setIsMenuOpen(!isMenuOpen)} isActive={pathname.includes('/vacancies')}>
+                    <Link href={'/vacancies'}
+                          className={`transition-background items-center flex rounded-md justify-between `}>
+                        Вакансии
+                    </Link>
+                </NavbarMenuItem>
                 <NavbarMenuItem className={'px-2'} onClick={() => setIsMenuOpen(!isMenuOpen)} isActive={pathname.includes('/contacts')}>
                     <Link href={'/contacts'}
                           className={`transition-background items-center flex rounded-md justify-between`}>
@@ -184,6 +190,12 @@ const AppNavbar = () => {
                     <Link href={'/about-us'}
                           className={`transition-background items-center flex rounded-md justify-between `}>
                         О нас
+                    </Link>
+                </NavbarItem>
+                <NavbarItem isActive={pathname.includes('/vacancies')}>
+                    <Link href={'/vacancies'}
+                          className={`transition-background items-center flex rounded-md justify-between `}>
+                        Вакансии
                     </Link>
                 </NavbarItem>
                 <NavbarItem isActive={pathname.includes('/contacts')}>
