@@ -19,10 +19,10 @@ const Page = async() => {
                         <div className={'bg-primary relative overflow-x-hidden'}>
                             <div className={'text-white text-xl font-bold bg-primary flex items-center justify-between animate-marquee lg:animate-marquee2 whitespace-nowrap'}>
                                 <p className={'animate-pulse'}>
-                                    Страховочный пакет 1 199 000 руб*
+                                    Страховочный пакет 1 199 000₽ С НДС
                                 </p>
                                 <p className={'animate-pulse hidden lg:flex'}>
-                                    Страховочный пакет 1 199 000 руб*
+                                    Страховочный пакет 1 199 000₽ С НДС
                                 </p>
                             </div>
                         </div>
