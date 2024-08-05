@@ -58,7 +58,8 @@ const PackingOfSafetyBags = () => {
                     </CardHeader>
                     <Divider/>
                     <CardBody className=" max-h-[382px] py-2 px-2 flex flex-col gap-4">
-                        <div>
+                        <div className={'z-0 flex flex-col relative justify-between gap-4 overflow-auto' +
+                            'w-full max-h-[382px] max-w-3xl border-none'}>
                             <Table aria-label="Example static collection table"
                                    classNames={classNames}
                                    selectionMode="single"
@@ -67,37 +68,41 @@ const PackingOfSafetyBags = () => {
 
                             >
                                 <TableHeader className={'bg-primary'}>
-                                    <TableColumn className={'w-fit'}>Состав</TableColumn>
+                                    <TableColumn className={'w-fit'}>Наименование</TableColumn>
                                     <TableColumn className={'w-fit'}>Количество,шт</TableColumn>
                                 </TableHeader>
                                 <TableBody>
                                     <TableRow key="1">
+                                        <TableCell>Рельсы, длина 12,5м</TableCell>
+                                        <TableCell>12</TableCell>
+                                    </TableRow>
+                                    <TableRow key="2">
                                         <TableCell>Полушпала</TableCell>
                                         <TableCell>46</TableCell>
                                     </TableRow>
-                                    <TableRow key="2">
-                                        <TableCell>Болт М22×70 в сборе</TableCell>
-                                        <TableCell>92</TableCell>
-                                    </TableRow>
                                     <TableRow key="3">
-                                        <TableCell>Болт М24×80 в сборе</TableCell>
-                                        <TableCell>184</TableCell>
-                                    </TableRow>
-                                    <TableRow key="4">
                                         <TableCell>Хомут</TableCell>
                                         <TableCell>184</TableCell>
                                     </TableRow>
+                                    <TableRow key="4">
+                                        <TableCell>Болт клеменный в сборе М22×75</TableCell>
+                                        <TableCell>276</TableCell>
+                                    </TableRow>
                                     <TableRow key="5">
-                                        <TableCell>Подвесаные болты</TableCell>
+                                        <TableCell>Болт М24×180</TableCell>
                                         <TableCell>368</TableCell>
                                     </TableRow>
                                     <TableRow key="6">
-                                        <TableCell>Отбойный брус</TableCell>
-                                        <TableCell>368</TableCell>
+                                        <TableCell>Болт М24×80</TableCell>
+                                        <TableCell>552</TableCell>
                                     </TableRow>
                                     <TableRow key="7">
-                                        <TableCell>Клеменные болты в сборе</TableCell>
-                                        <TableCell>92</TableCell>
+                                        <TableCell>Гайка М24</TableCell>
+                                        <TableCell>920</TableCell>
+                                    </TableRow>
+                                    <TableRow key="8">
+                                        <TableCell>Шайба 24</TableCell>
+                                        <TableCell>1840</TableCell>
                                     </TableRow>
                                 </TableBody>
                             </Table>
@@ -112,46 +117,52 @@ const PackingOfSafetyBags = () => {
                     </CardHeader>
                     <Divider/>
                     <CardBody className=" max-h-[382px] py-2 px-2 flex flex-col gap-4">
-                        <div>
+                        <div className={'z-0 flex flex-col relative justify-between gap-4 overflow-auto' +
+                            'w-full max-h-[382px] max-w-3xl border-none'}>
                             <Table aria-label="Example static collection table"
                                    classNames={classNames}
                                    selectionMode="single"
                                    removeWrapper
+                                   isStriped
                                    color={'primary'}
 
                             >
                                 <TableHeader className={'bg-primary'}>
-                                    <TableColumn className={'w-fit'}>Состав</TableColumn>
+                                    <TableColumn className={'w-fit'}>Наименование</TableColumn>
                                     <TableColumn className={'w-fit'}>Количество,шт</TableColumn>
                                 </TableHeader>
                                 <TableBody>
                                     <TableRow key="1">
+                                        <TableCell>Рельсы, длина 12,5м</TableCell>
+                                        <TableCell>24</TableCell>
+                                    </TableRow>
+                                    <TableRow key="2">
                                         <TableCell>Полушпала</TableCell>
                                         <TableCell>92</TableCell>
                                     </TableRow>
-                                    <TableRow key="2">
-                                        <TableCell>Болт М22×70 в сборе</TableCell>
-                                        <TableCell>184</TableCell>
-                                    </TableRow>
                                     <TableRow key="3">
-                                        <TableCell>Болт М24×80 в сборе</TableCell>
-                                        <TableCell>368</TableCell>
-                                    </TableRow>
-                                    <TableRow key="4">
                                         <TableCell>Хомут</TableCell>
                                         <TableCell>368</TableCell>
                                     </TableRow>
+                                    <TableRow key="4">
+                                        <TableCell>Болт клеменный в сборе М22×75</TableCell>
+                                        <TableCell>552</TableCell>
+                                    </TableRow>
                                     <TableRow key="5">
-                                        <TableCell>Подвесаные болты</TableCell>
+                                        <TableCell>Болт М24×180</TableCell>
                                         <TableCell>736</TableCell>
                                     </TableRow>
                                     <TableRow key="6">
-                                        <TableCell>Отбойный брус</TableCell>
-                                        <TableCell>736</TableCell>
+                                        <TableCell>Болт М24×80</TableCell>
+                                        <TableCell>1104</TableCell>
                                     </TableRow>
                                     <TableRow key="7">
-                                        <TableCell>Клеменные болты в сборе</TableCell>
-                                        <TableCell>184</TableCell>
+                                        <TableCell>Гайка М24</TableCell>
+                                        <TableCell>1840</TableCell>
+                                    </TableRow>
+                                    <TableRow key="8">
+                                        <TableCell>Шайба 24</TableCell>
+                                        <TableCell>3680</TableCell>
                                     </TableRow>
                                 </TableBody>
                             </Table>
