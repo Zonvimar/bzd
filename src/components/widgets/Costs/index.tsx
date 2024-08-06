@@ -124,7 +124,7 @@ const Costs = () => {
                                         <TableCell>Сторонним организациям для их видов работ</TableCell>
                                     </TableRow>
                                     <TableRow key="12">
-                                        <TableCell>Разработка ППР</TableCell>
+                                        <TableCell>Разработка и согласование</TableCell>
                                         <TableCell>200 000</TableCell>
                                         <TableCell>Сторонним организациям для их видов работ</TableCell>
                                     </TableRow>

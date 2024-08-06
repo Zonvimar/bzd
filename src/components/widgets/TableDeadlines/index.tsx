@@ -25,7 +25,7 @@ const TableDeadlines = () => {
                 </thead>
                 <tbody>
                 <tr>
-                    <td className="border-none shadow-sm bg-primary opacity-80 px-4 py-2">1. Подписание
+                    <td className="border-none shadow-sm bg-primary  px-4 py-2">1. Подписание
                         договора
                     </td>
                     <td className="text-center bg-primary text-white">1</td>
@@ -52,8 +52,7 @@ const TableDeadlines = () => {
                     <td className={'border border-black/20 w-[20px]'}></td>
                 </tr>
                 <tr>
-                    <td className="border-none bg-primary opacity-80 px-4 py-2">2. Разработка
-                        ППР на страхпакет
+                    <td className="border-none bg-primary  px-4 py-2">2. Разработка проекта производства работ
                     </td>
                     <td className={'border border-black/20 w-[20px]'}></td>
                     <td className="text-center bg-primary text-white" colSpan={3}>3 дня*</td>
@@ -77,16 +76,14 @@ const TableDeadlines = () => {
                     <td className={'border border-black/20 w-[20px]'}></td>
                 </tr>
                 <tr>
-                    <td className="border-none shadow-md bg-primary opacity-80 px-4 py-2">
-                        3. Инструментальная проверка коммуникаций,
-                        Согласование ППР на страхпакет,
-                        Договор на технадзор
+                    <td className="border-none shadow-md bg-primary  px-4 py-2">
+                        3. Согласование ППР
                     </td>
                     <td className={'border border-black/20 w-[20px]'}></td>
                     <td className={'border border-black/20 w-[20px]'}></td>
                     <td className={'border border-black/20 w-[20px]'}></td>
                     <td className={'border border-black/20 w-[20px]'}></td>
-                    <td className="text-center bg-primary text-white" rowSpan={4} colSpan={10} data-bs-toggle="tooltip"
+                    <td className="text-center bg-primary text-white" rowSpan={5} colSpan={10} data-bs-toggle="tooltip"
                         data-bs-placement="bottom"
                         data-bs-title="Проверка наличия инженерных коммуникаций, установка временных знаков в местах их расположения в зоне производства работ. Разработка мероприятий по обеспечению сохранности инженерных и кабельных коммуникаций.">23
                         дня*
@@ -101,8 +98,7 @@ const TableDeadlines = () => {
                     <td className={'border border-black/20 w-[20px]'}></td>
                 </tr>
                 <tr>
-                    <td className="border-none bg-primary opacity-60 px-6 py-2">3.1. Создание
-                        комиссии по инструментальной проверке
+                    <td className="border-none bg-primary  px-6 py-2">3.1.Организация и проведение инструментальной проверки
                     </td>
                     <td className={'border border-black/20 w-[20px]'}></td>
                     <td className={'border border-black/20 w-[20px]'}></td>
@@ -118,8 +114,7 @@ const TableDeadlines = () => {
                     <td className={'border border-black/20 w-[20px]'}></td>
                 </tr>
                 <tr>
-                    <td className="border-none bg-primary opacity-60 px-6 py-2">3.2.
-                        Комиссионный осмотр места работ
+                    <td className="border-none bg-primary  px-6 py-2">3.2. Получение документации в подразделения ОАО "РЖД"
                     </td>
                     <td className={'border border-black/20 w-[20px]'}></td>
                     <td className={'border border-black/20 w-[20px]'}></td>
@@ -135,8 +130,7 @@ const TableDeadlines = () => {
                     <td className={'border border-black/20 w-[20px]'}></td>
                 </tr>
                 <tr>
-                    <td className="border-none bg-primary opacity-60 px-6 py-2">3.2.
-                        подразделениях ОАО РЖД документов
+                    <td className="border-none bg-primary  px-6 py-2">3.3. Прохождение иструктажа в подразделениях ОАО "РЖД"
                     </td>
                     <td className={'border border-black/20 w-[20px]'}></td>
                     <td className={'border border-black/20 w-[20px]'}></td>
@@ -152,8 +146,23 @@ const TableDeadlines = () => {
                     <td className={'border border-black/20 w-[20px]'}></td>
                 </tr>
                 <tr>
-                    <td className="border-none shadow-sm bg-primary opacity-80 px-4 py-2">4. Получение
-                        акта-допуска
+                    <td className="border-none bg-primary  px-6 py-2">3.4. Согласование ППР в подразделениях ОАО "РЖД"
+                    </td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                    <td className={'border border-black/20 w-[20px]'}></td>
+                </tr>
+                <tr>
+                    <td className="border-none shadow-sm bg-primary  px-4 py-2">4. Получение акта-допуска
                     </td>
                     <td className={'border border-black/20 w-[20px]'}></td>
                     <td className={'border border-black/20 w-[20px]'}></td>
@@ -175,8 +184,7 @@ const TableDeadlines = () => {
                     <td className={'border border-black/20 w-[20px]'}></td>
                 </tr>
                 <tr>
-                    <td className="border-b border-black/20 shadow-sm bg-primary opacity-80 px-4 py-2">5. Установка
-                        страхпакета
+                    <td className="border-b border-black/20 shadow-sm bg-primary  px-4 py-2">5. Установка ресльсового страховочного пакета
                     </td>
                     <td className={'border border-black/20 w-[20px]'}></td>
                     <td className={'border border-black/20 w-[20px]'}></td>
