@@ -5,6 +5,7 @@ import AdditionalServices from "@/components/widgets/AdditionalServices";
 import PickupConditions from "@/components/widgets/PickupConditions";
 import {Check} from "lucide-react";
 import {Image} from "@nextui-org/react";
+import ListOfGeodeticEquipment from "@/components/widgets/ListOfGeodeticEquipment";
 
 const Page = async() => {
 
@@ -103,6 +104,9 @@ const Page = async() => {
                                 className={'object-cover hidden lg:block'} removeWrapper
                             />
                         </div>
+                    </div>
+                    <div className={'pt-6'}>
+                        <ListOfGeodeticEquipment/>
                     </div>
                 </div>
             </div>
