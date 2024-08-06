@@ -90,13 +90,13 @@ const AppNavbar = () => {
                                 Аренда
                             </Link>
                         </NavbarMenuItem>
-                        <NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)}
-                                        isActive={pathname.includes('/services/monitoring')}>
-                            <Link href={'/services/monitoring'}
-                                  className={`transition-background items-center flex rounded-md justify-between `}>
-                                Мониторинг
-                            </Link>
-                        </NavbarMenuItem>
+                        {/*<NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)}*/}
+                        {/*                isActive={pathname.includes('/services/monitoring')}>*/}
+                        {/*    <Link href={'/services/monitoring'}*/}
+                        {/*          className={`transition-background items-center flex rounded-md justify-between `}>*/}
+                        {/*        Мониторинг*/}
+                        {/*    </Link>*/}
+                        {/*</NavbarMenuItem>*/}
                         {/*<NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)}*/}
                         {/*                isActive={pathname.includes('/services/installation')}>*/}
                         {/*    <Link href={'/services/installation'}*/}
@@ -164,13 +164,13 @@ const AppNavbar = () => {
                         >
                             Аренда
                         </DropdownItem>
-                        <DropdownItem
-                            key="monitoring"
-                            href={'/services/monitoring/'}
-                            className={`${pathname.includes('/services/monitoring') ? 'bg-primary text-white' : ''}`}
-                        >
-                            Мониторинг
-                        </DropdownItem>
+                        {/*<DropdownItem*/}
+                        {/*    key="monitoring"*/}
+                        {/*    href={'/services/monitoring/'}*/}
+                        {/*    className={`${pathname.includes('/services/monitoring') ? 'bg-primary text-white' : ''}`}*/}
+                        {/*>*/}
+                        {/*    Мониторинг*/}
+                        {/*</DropdownItem>*/}
                         {/*<DropdownItem*/}
                         {/*    key="installation"*/}
                         {/*    href={'/services/installation/'}*/}
