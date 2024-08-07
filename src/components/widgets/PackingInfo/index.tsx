@@ -11,7 +11,7 @@ const PackingInfo = () => {
                 <Card className={"w-full hover:shadow-2xl hover:transition-all"}>
                     <CardBody className="overflow-hidden grid grid-cols-1 lg:grid-cols-2 justify-between gap-4">
                         <Image
-                            alt="NextUI logo"
+                            alt=" "
                             src="/packingInfo/img.png"
                             width={'100%'}
                             height={'100%'}
@@ -31,7 +31,7 @@ const PackingInfo = () => {
                 <Card className={"w-full hover:shadow-2xl hover:transition-all"}>
                     <CardBody className="overflow-hidden grid grid-cols-1 lg:grid-cols-2  justify-between gap-4">
                         <Image
-                            alt="NextUI logo"
+                            alt=" "
                             src="/packingInfo/img_1.png"
                             width={'100%'}
                             height={'100%'}
@@ -48,7 +48,7 @@ const PackingInfo = () => {
                 <Card className={"w-full hover:shadow-2xl hover:transition-all"}>
                     <CardBody className="overflow-hidden grid grid-cols-1 lg:grid-cols-2  justify-between gap-4">
                         <Image
-                            alt="NextUI logo"
+                            alt=" "
                             src="/packingInfo/img_5.png"
                             width={'100%'}
                             height={'100%'}
@@ -65,7 +65,7 @@ const PackingInfo = () => {
                 <Card className={"w-full hover:shadow-2xl hover:transition-all"}>
                     <CardBody className="overflow-hidden grid grid-cols-1 lg:grid-cols-2  justify-between gap-4">
                         <Image
-                            alt="NextUI logo"
+                            alt=" "
                             src="/packingInfo/img_6.png"
                             width={'100%'}
                             height={'100%'}
@@ -82,7 +82,7 @@ const PackingInfo = () => {
                 <Card className={"w-full hover:shadow-2xl hover:transition-all"}>
                     <CardBody className="overflow-hidden grid grid-cols-1 lg:grid-cols-2  justify-between gap-4">
                         <Image
-                            alt="NextUI logo"
+                            alt=" "
                             src="/packingInfo/img_8.png"
                             width={'100%'}
                             height={'100%'}

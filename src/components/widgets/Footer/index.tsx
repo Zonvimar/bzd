@@ -16,7 +16,7 @@ const Footer = () => {
                     <Image
                         width={'150'}
                         height={'150'}
-                        alt="NextUI hero Image"
+                        alt=" "
                         src="/img_1.png"
                     />
                 </div>

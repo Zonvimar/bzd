@@ -65,7 +65,7 @@ const AppNavbar = () => {
                 <Link href={'/'}>
                     <Image
                         width={80}
-                        alt="NextUI hero Image"
+                        alt=" "
                         src="/img-rm-bg.png"
                     />
                     {/*<p className="font-bold text-inherit hidden lg:flex md:flex">Безопасные железные дороги</p>*/}

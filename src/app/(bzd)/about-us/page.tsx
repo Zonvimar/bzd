@@ -127,7 +127,7 @@ const Page = async() => {
                                 <Image
                                     width={'100%'}
                                     height={'70%'}
-                                    alt="NextUI hero Image"
+                                    alt=" "
                                     src="/rjd.jpg"
                                     radius={'none'}
                                 />
@@ -136,7 +136,7 @@ const Page = async() => {
                                 <Image
                                     width={'100%'}
                                     height={'100%'}
-                                    alt="NextUI hero Image"
+                                    alt=" "
                                     src="/mosinjproject.svg"
                                     radius={'none'}
                                 />
@@ -145,7 +145,7 @@ const Page = async() => {
                                 <Image
                                     width={'100%'}
                                     height={'100%'}
-                                    alt="NextUI hero Image"
+                                    alt=" "
                                     src="/mck.jpg"
                                     radius={'none'}
                                 />
@@ -154,7 +154,7 @@ const Page = async() => {
                                 <Image
                                     width={'80%'}
                                     height={'100%'}
-                                    alt="NextUI hero Image"
+                                    alt=" "
                                     src="/mip.png"
                                     radius={'none'}
                                 />
@@ -163,7 +163,7 @@ const Page = async() => {
                                 <Image
                                     width={'100%'}
                                     height={'100%'}
-                                    alt="NextUI hero Image"
+                                    alt=" "
                                     src="/1520.svg"
                                     radius={'none'}
                                 />
@@ -172,7 +172,7 @@ const Page = async() => {
                                 <Image
                                     width={'100%'}
                                     height={'100%'}
-                                    alt="NextUI hero Image"
+                                    alt=" "
                                     src="/mostotrest.svg"
                                     radius={'none'}
                                 />
@@ -184,7 +184,7 @@ const Page = async() => {
                                 <Image
                                     width={'100%'}
                                     height={'100%'}
-                                    alt="NextUI hero Image"
+                                    alt=" "
                                     src="/aodim.png"
                                     radius={'none'}
                                 />
@@ -193,7 +193,7 @@ const Page = async() => {
                                 <Image
                                     width={'100%'}
                                     height={'100%'}
-                                    alt="NextUI hero Image"
+                                    alt=" "
                                     src="/misk.png"
                                     radius={'none'}
                                 />

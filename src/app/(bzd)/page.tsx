@@ -50,7 +50,7 @@ const Page = async() => {
                         <Image
                             width={'100%'}
                             height={'70%'}
-                            alt="NextUI hero Image"
+                            alt=" "
                             src="/people-zd.jpg"
                         />
                         <div className={'flex flex-col justify-between h-full gap-3'}>

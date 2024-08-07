@@ -18,7 +18,7 @@ const Equipment = () => {
                 <Card className={"w-full hover:shadow-2xl transition-shadow"}>
                     <CardBody className="overflow-hidden grid grid-cols-1 lg:grid-cols-2 justify-between gap-4">
                         <Image
-                            alt="NextUI logo"
+                            alt=" "
                             src="/kamaz.jpg"
                             width={'100%'}
                             height={'100%'}
@@ -53,7 +53,7 @@ const Equipment = () => {
                 <Card className={"w-full hover:shadow-2xl transition-shadow"}>
                     <CardBody className="overflow-hidden grid grid-cols-1 lg:grid-cols-2  justify-between gap-4">
                         <Image
-                            alt="NextUI logo"
+                            alt=" "
                             src="/alyuminotermitnaya-svarka.jpg"
                             width={'100%'}
                             height={'100%'}
@@ -93,7 +93,7 @@ const Equipment = () => {
                 <Card className={"w-full hover:shadow-2xl transition-shadow"}>
                     <CardBody className="overflow-hidden grid grid-cols-1 lg:grid-cols-2  justify-between gap-4">
                         <Image
-                            alt="NextUI logo"
+                            alt=" "
                             src="/pogruzka-dostavka-vygruzka.jpg"
                             width={'100%'}
                             height={'100%'}

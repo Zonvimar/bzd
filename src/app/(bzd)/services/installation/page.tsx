@@ -27,7 +27,7 @@ const Page = async() => {
                         <Image
                             width={'100%'}
                             height={'70%'}
-                            alt="NextUI hero Image"
+                            alt=" "
                             src="/install.jpg"
                         />
                         {/*</div>*/}
