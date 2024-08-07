@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: 'БЖД | Безопасные железные дороги',
   description: 'Безопасные железные дороги',
   icons: {
-    icon: '/img.png',
+    icon: '/favicon.ico',
   },
 }
 
