@@ -19,7 +19,7 @@ const Equipment = () => {
                     <CardBody className="overflow-hidden grid grid-cols-1 lg:grid-cols-2 justify-between gap-4">
                         <Image
                             alt="NextUI logo"
-                            src="/oborudovaniye-i-tekhnika.jpg"
+                            src="/kamaz.jpg"
                             width={'100%'}
                             height={'100%'}
                         />
