@@ -30,19 +30,19 @@ const Equipment = () => {
                                 а так же компания должна иметь сертификат СРО на проведение данного вида работ.
                                 Выполняет данный этап бригада из 6-10 человек.</p>
                             <p className={'flex gap-2 items-center'}>
-                                <hr className={'w-8 h-0.5 bg-primary rounded border-0'}/>
+                                <div className={'w-4 h-4 min-w-4 max-h-4 bg-primary rounded-full border-0'}/>
                                 1 автокран для установки пакета 12,5 метров и 2 для 25 метровых пакетов.
                             </p>
                             <p className={'flex gap-2 items-center'}>
-                                <hr className={'w-8 h-0.5 bg-primary rounded border-0'}/>
+                                <div className={'w-4 h-4 min-w-4 max-h-4 bg-primary rounded-full border-0'}/>
                                 2-3 портальных крана для перемещения рельсов по жд пути.
                             </p>
                             <p className={'flex gap-2 items-center'}>
-                                <hr className={'w-8 h-0.5 bg-primary rounded border-0'}/>
+                                <div className={'w-4 h-4 min-w-4 max-h-4 bg-primary rounded-full border-0'}/>
                                 Путевой гайковерт.
                             </p>
                             <p className={'flex gap-2 items-center'}>
-                                <hr className={'w-8 h-0.5 bg-primary rounded border-0'}/>
+                                <div className={'w-4 h-4 min-w-4 max-h-4 bg-primary rounded-full border-0'}/>
                                 Рельсорезный станок.
                             </p>
                         </div>
@@ -65,23 +65,23 @@ const Equipment = () => {
                                 прочную конструкцию длиной 25 метров, рельсы сваривают на месте производства работ.
                             </p>
                             <p className={'flex gap-2 items-center'}>
-                                <hr className={'w-8 h-0.5 bg-primary rounded border-0'}/>
+                                <div className={'w-4 h-4 min-w-4 max-h-4 bg-primary rounded-full border-0'}/>
                                 Газопламенный резак.
                             </p>
                             <p className={'flex gap-2 items-center'}>
-                                <hr className={'w-8 h-0.5 bg-primary rounded border-0'}/>
+                                <div className={'w-4 h-4 min-w-4 max-h-4 bg-primary rounded-full border-0'}/>
                                 Кислородный регулятор.
                             </p>
                             <p className={'flex gap-2 items-center'}>
-                                <hr className={'w-8 h-0.5 bg-primary rounded border-0'}/>
+                                <div className={'w-4 h-4 min-w-4 max-h-4 bg-primary rounded-full border-0'}/>
                                 Гратосниматель.
                             </p>
                             <p className={'flex gap-2 items-center'}>
-                                <hr className={'w-8 h-0.5 bg-primary rounded border-0'}/>
+                                <div className={'w-4 h-4 min-w-4 max-h-4 bg-primary rounded-full border-0'}/>
                                 Гидравлический насос.
                             </p>
                             <p className={'flex gap-2 items-center'}>
-                                <hr className={'w-8 h-0.5 bg-primary rounded border-0'}/>
+                                <div className={'w-4 h-4 min-w-4 max-h-4 bg-primary rounded-full border-0'}/>
                                 Шлифовальная машина.
                             </p>
                         </div>
@@ -94,28 +94,29 @@ const Equipment = () => {
                     <CardBody className="overflow-hidden grid grid-cols-1 lg:grid-cols-2  justify-between gap-4">
                         <Image
                             alt=" "
-                            src="/pogruzka-dostavka-vygruzka.jpg"
+                            src="/fura.jpg"
                             width={'100%'}
                             height={'100%'}
                         />
                         <div className={'flex flex-col gap-4 justify-center'}>
                             <p className={'font-bold text-xl'}>Погрузка, доставка, выгрузка</p>
                             <p className={'flex gap-2 items-center'}>
-                                <hr className={'w-8 h-0.5 bg-primary rounded border-0'}/>
+                                <div className={'w-4 h-4 min-w-4 max-h-4 bg-primary rounded-full border-0'}/>
                                 2 стропальщика, которые обязательны при погрузке крупногабаритных грузов.
                             </p>
                             <p className={'flex gap-2 items-center'}>
-                                <hr className={'w-8 h-0.5 bg-primary rounded border-0'}/>
-                                Автокран с верхней загрузкой.
+                                <div className={'w-4 h-4 min-w-4 max-h-4 bg-primary rounded-full border-0'}/>
+                                Автокран
+                                {/*с верхней загрузкой.*/}
                             </p>
                             <p className={'flex gap-2 items-center'}>
-                                <hr className={'w-8 h-0.5 bg-primary rounded border-0'}/>
+                                <div className={'w-4 h-4 min-w-4 max-h-4 bg-primary rounded-full border-0'}/>
                                 Фура с верхней загрузкой.
                             </p>
-                            <p className={'flex gap-2 items-center'}>
-                                <hr className={'w-8 h-0.5 bg-primary rounded border-0'}/>
-                                Манипулятор для перемещения от фуры до места проведения работ.
-                            </p>
+                            {/*<p className={'flex gap-2 items-center'}>*/}
+                            {/*    <hr className={'w-8 h-0.5 bg-primary rounded border-0'}/>*/}
+                            {/*    Манипулятор для перемещения от фуры до места проведения работ.*/}
+                            {/*</p>*/}
                         </div>
                     </CardBody>
                 </Card>

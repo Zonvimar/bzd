@@ -206,9 +206,9 @@ const AppNavbar = () => {
                 </NavbarItem>
             </NavbarContent>
             <NavbarContent justify="end">
-                {/*<NavbarItem>*/}
-                {/*    <ThemeSwitcher/>*/}
-                {/*</NavbarItem>*/}
+                <NavbarItem>
+                    <ThemeSwitcher/>
+                </NavbarItem>
                 <NavbarItem className={'hidden sm:flex'}>
                     <OrderCallButton/>
                 </NavbarItem>

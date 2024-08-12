@@ -104,8 +104,8 @@ const Page = async() => {
                     </Card>
                     <Card className={"w-full hover:transition-all hover:shadow-2xl"}>
                         <CardBody className="overflow-hidden p-0 flex flex-col lg:flex-row justify-start gap-4">
-                            <img className={'h-[250px] w-[450px] rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none object-cover'} alt=" "
-                                 src="/project5.jpg"
+                            <img className={'h-[250px] w-[450px] rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none object-none'} alt=" "
+                                 src="/project5.png"
                             />
                             <div className={'flex flex-col justify-center gap-4 px-2 pb-2'}>
                             <p className={'font-bold text-xl'}>
