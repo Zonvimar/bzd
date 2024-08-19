@@ -60,9 +60,9 @@ const BaseCarouselImages = () => {
                 <div>
                     <img src='/base/base09.jpg' alt='slide-8'/>
                 </div>
-                <div>
-                    <img src='/base/base010.jpg' alt='slide-9'/>
-                </div>
+                {/*<div>*/}
+                {/*    <img src='/base/base010.jpg' alt='slide-9'/>*/}
+                {/*</div>*/}
                 {/*<div>*/}
                 {/*    <img src='/base/base011.jpg' alt='slide-5'/>*/}
                 {/*</div>*/}
